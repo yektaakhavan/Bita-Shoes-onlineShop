@@ -1,727 +1,634 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
-            integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
-            crossorigin="anonymous"
-        >
-        <!-- .. -->
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Swiper JS -->
-        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <!-- font-awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <!-- Links -->
-        <link rel="stylesheet" href="Styles/header.css">
-        <link rel="stylesheet" href="Styles/main.css">
-        <script defer src="JavaScript/header.js"></script>
-        <title>Bita Theme</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row top-menu d-flex justify-content-between align-items-center py-3">
-                    <!-- Search -->
-                    <div class="col-4 d-none d-lg-flex justify-content-center align-items-center">
-                        <div class="top-menu-search w-100">
-                            <form>
-                                <div class="input-group">
-                                    <input
-                                        name="txt"
-                                        class="search-txt rounded-pill fs-6"
-                                        data-panel="searchResultsPanel"
-                                        placeholder="جستجو کنید..."
-                                    >
-                                    <button class="btn search-btn rounded-circle" title="جستجو">
-                                        <!-- search svg -->
-                                        <svg
-                                            width="21"
-                                            height="20"
-                                            viewBox="0 0 21 20"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="d-block"
-                                        >
-                                            <path
-                                                d="M11.9344 4.16669H16.9344"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                            <path
-                                                d="M11.9344 6.66669H14.4344"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                            <path
-                                                d="M17.7678 9.58335C17.7678 13.9584 14.2261 17.5 9.85111 17.5C5.47611 17.5 1.93445 13.9584 1.93445 9.58335C1.93445 5.20835 5.47611 1.66669 9.85111 1.66669"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                            <path
-                                                d="M18.6011 18.3334L16.9344 16.6667"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Links -->
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <script defer src="JavaScript/header.js"></script>
+    <title>Bita Theme</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row top-menu d-flex justify-content-between align-items-center py-3">
+                <!-- Search -->
+                <div class="col-4 d-none d-lg-flex justify-content-center align-items-center">
+                    <div class="top-menu-search w-100">
+                        <form>
+                            <div class="input-group">
+                                <input name="txt" class="search-txt rounded-pill fs-6" data-panel="searchResultsPanel"
+                                    placeholder="جستجو کنید...">
+                                <button class="btn search-btn rounded-circle" title="جستجو">
+                                    <!-- search svg -->
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="d-block">
+                                        <path d="M11.9344 4.16669H16.9344" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.9344 6.66669H14.4344" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.7678 9.58335C17.7678 13.9584 14.2261 17.5 9.85111 17.5C5.47611 17.5 1.93445 13.9584 1.93445 9.58335C1.93445 5.20835 5.47611 1.66669 9.85111 1.66669"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18.6011 18.3334L16.9344 16.6667" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- Support & Phone -->
-                    <div class="col-4 d-none d-lg-flex justify-content-end align-items-center fs-5">
-                        <span class="text-gray ms-2">پشتیبانی 24 ساعته</span>
-                        <span class="mx-2">|</span>
-                        <div class="d-inline-flex align-items-center gap-2" style="direction: ltr;">
-                            <!-- phone svg -->
-                            <svg
-                                width="27"
-                                height="27"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                transform="matrix(1, 0, 0, 1, 0, 0)"
-                                stroke="#955b0e"
-                                stroke-width="0.168"
-                            >
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path opacity="0.5" d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" fill="#d2b48c"></path>
-                                    <path d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z" fill="#d2b48c"></path>
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
-                                        fill="#d2b48c"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <span class="text-gray">021</span>
-                            <span class="text-primary-cream fw-bold fs-5">59 30 72 93</span>
-                        </div>
+                </div>
+                <!-- Support & Phone -->
+                <div class="col-4 d-none d-lg-flex justify-content-end align-items-center fs-5">
+                    <span class="text-gray ms-2">پشتیبانی 24 ساعته</span>
+                    <span class="mx-2">|</span>
+                    <div class="d-inline-flex align-items-center gap-2" style="direction: ltr;">
+                        <!-- phone svg -->
+                        <svg width="27" height="27" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#955b0e" stroke-width="0.168">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path opacity="0.5"
+                                    d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
+                                    fill="#d2b48c"></path>
+                                <path
+                                    d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z"
+                                    fill="#d2b48c"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
+                                    fill="#d2b48c"></path>
+                            </g>
+                        </svg>
+                        <span class="text-gray">021</span>
+                        <span class="text-primary-cream fw-bold fs-5">59 30 72 93</span>
                     </div>
                 </div>
             </div>
-            <div id="menu-shop-header">
-                <div class="container">
-                    <div class="row d-flex justify-content-between align-items-center" style="direction: rtl;">
-                        <div class="col-8 d-flex align-items-center gap-4">
-                            <div class="shop-name-header fw-bold primary-text-color">
-                                <!-- shop svg -->
-                                <svg
-                                    class="me-3"
-                                    height="35px"
-                                    width="35px"
-                                    version="1.1"
-                                    id="Capa_1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 217.791 217.791"
-                                    xml:space="preserve"
-                                    fill="#000000"
-                                >
+        </div>
+        <div id="menu-shop-header">
+            <div class="container">
+                <div class="row d-flex justify-content-between align-items-center" style="direction: rtl;">
+                    <div class="col-8 d-flex align-items-center gap-4">
+                        <div class="shop-name-header fw-bold primary-text-color">
+                            <!-- shop svg -->
+                            <svg class="me-3" height="35px" width="35px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 217.791 217.791" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <g>
+                                            <path style="fill:#d2b48c;"
+                                                d="M187.129,0H36.465c-7.864,0-14.667,6.122-15.49,13.951L1.332,201.979 c-0.43,4.081,0.871,8.127,3.556,11.11c2.691,2.989,6.587,4.702,10.693,4.702h186.465c4.052,0,7.936-1.677,10.651-4.6 c2.715-2.924,4.105-6.922,3.801-10.961L202.47,14.237C201.873,6.253,195.136,0,187.129,0z M19.549,199.89l19.01-181.99h146.224 l13.587,181.99H19.549z">
+                                            </path>
+                                            <path style="fill:#d2b48c;"
+                                                d="M148.344,35.055c-7.817,0-14.171,6.355-14.171,14.171c0,6.79,4.803,12.471,11.188,13.843 c-0.591,9.887-3.055,24.482-11.868,33.79c-6.009,6.343-14.315,9.356-24.584,9.052c-10.358-0.346-18.73-3.998-24.876-10.86 c-8.175-9.105-11.122-22.256-12.131-32.102c6.188-1.522,10.806-7.077,10.806-13.724c0-7.817-6.355-14.171-14.171-14.171 S54.366,41.41,54.366,49.227c0,6.904,4.97,12.656,11.522,13.903C66.932,73.876,70.16,88.513,79.57,99.02 c7.28,8.127,17.083,12.459,29.142,12.859c0.597,0.018,1.187,0.03,1.778,0.03c11.277,0,20.478-3.682,27.352-10.961 c10.233-10.824,12.942-27.102,13.533-37.896c6.355-1.396,11.134-7.059,11.134-13.825C162.515,41.41,156.161,35.055,148.344,35.055 z M60.333,49.227c0-4.523,3.682-8.204,8.204-8.204c4.523,0,8.204,3.682,8.204,8.204c0,3.485-2.196,6.45-5.269,7.638 c-0.167-4.427,0.036-7.315,0.042-7.411c0.125-1.641-1.104-3.079-2.745-3.198c-1.683-0.167-3.079,1.104-3.204,2.745 c-0.03,0.382-0.233,3.377-0.09,7.823C62.469,55.605,60.333,52.664,60.333,49.227z M151.519,56.787 c-0.036-2.745-0.173-4.559-0.203-4.845c-0.149-1.641-1.617-2.828-3.234-2.703c-1.641,0.143-2.852,1.599-2.709,3.234 c0.006,0.072,0.137,1.754,0.155,4.427c-3.133-1.152-5.388-4.141-5.388-7.673c0-4.523,3.682-8.204,8.204-8.204 s8.204,3.682,8.204,8.204C156.549,52.622,154.472,55.546,151.519,56.787z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            آنلاین شاپ شما
+                        </div>
+                        <div class="d-flex align-items-center gap-2 header-menu">
+                            <div class="dropdown position-relative d-inline-block" id="categoryMenu">
+                                <a href="#" class="menu-title mx-2 d-flex align-items-center">
+                                    <!-- category svg -->
+                                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path opacity="0.34"
+                                                d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                                stroke="#2C3F5D" stroke-width="1.536" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                                stroke="#2C3F5D" stroke-width="1.536" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path opacity="0.34"
+                                                d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                                stroke="#2C3F5D" stroke-width="1.536" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                                stroke="#2C3F5D" stroke-width="1.536" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                    دسته بندی ها
+                                    <!-- dropdown arrow -->
+                                    <svg class="ms-1" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.29995 3.75L5.58329 6.46667C5.26245 6.7875 4.73745 6.7875 4.41662 6.46667L1.69995 3.75"
+                                            stroke="#3E3E3E" stroke-opacity="0.87" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu category-dropdown">
+                                    <div class="category-wrapper">
+                                        <div class="category-list">
+                                            <a href="#" class="category-link active" data-target="daily">کفش روزانه</a>
+                                            <a href="#" class="category-link" data-target="sport">کفش اسپرت</a>
+                                            <a href="#" class="category-link" data-target="college">کفش کالج</a>
+                                            <a href="#" class="category-link" data-target="official">کفش رسمی</a>
+                                        </div>
+                                        <div class="subcategory-container">
+                                            <div class="subcategory-menu show" id="daily">
+                                                <a href="#">کفش تخت</a>
+                                                <a href="#">کفش پیاده روی</a>
+                                                <a href="#">کفش طبی</a>
+                                            </div>
+                                            <div class="subcategory-menu" id="sport">
+                                                <a href="#">کتانی ورزشی</a>
+                                                <a href="#">کتانی روزمره</a>
+                                                <a href="#">کفش رانینگ</a>
+                                                <a href="#">کفش اسپرت لایت</a>
+                                            </div>
+                                            <div class="subcategory-menu" id="college">
+                                                <a href="#">کالج ساده</a>
+                                                <a href="#">کالج جیر</a>
+                                                <a href="#">کالج طبی</a>
+                                            </div>
+                                            <div class="subcategory-menu" id="official">
+                                                <a href="#">کفش مجلسی</a>
+                                                <a href="#">کفش کلاسیک</a>
+                                                <a href="#">کفش چرمی</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="vertical-line"></div> -->
+                            <a href="" class="menu-title mx-2" id="discountMenuButton">
+                                <!-- discount svg -->
+                                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M19.5 12.5C19.5 11.12 20.62 10 22 10V9C22 5 21 4 17 4H7C3 4 2 5 2 9V9.5C3.38 9.5 4.5 10.62 4.5 12C4.5 13.38 3.38 14.5 2 14.5V15C2 19 3 20 7 20H17C21 20 22 19 22 15C20.62 15 19.5 13.88 19.5 12.5Z"
+                                            stroke="#2C3F5D" stroke-width="1.056" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M9 14.75L15 8.75" stroke="#2C3F5D" stroke-width="1.056"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M14.9945 14.75H15.0035" stroke="#2C3F5D" stroke-width="1.056"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.99451 9.25H9.00349" stroke="#2C3F5D" stroke-width="1.056"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                تخفیفات
+                            </a>
+                            <a href="" class="menu-title mx-2" id="blogMenuButton">
+                                <!-- blog svg -->
+                                <svg class="me-2" width="22" height="22" version="1.1" id="_x32_"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 512.00 512.00" xml:space="preserve" fill="currentColor"
+                                    stroke-width="0.00512">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
                                         <g>
-                                            <g>
-                                                <path style="fill:#d2b48c;" d="M187.129,0H36.465c-7.864,0-14.667,6.122-15.49,13.951L1.332,201.979 c-0.43,4.081,0.871,8.127,3.556,11.11c2.691,2.989,6.587,4.702,10.693,4.702h186.465c4.052,0,7.936-1.677,10.651-4.6 c2.715-2.924,4.105-6.922,3.801-10.961L202.47,14.237C201.873,6.253,195.136,0,187.129,0z M19.549,199.89l19.01-181.99h146.224 l13.587,181.99H19.549z"></path>
-                                                <path style="fill:#d2b48c;" d="M148.344,35.055c-7.817,0-14.171,6.355-14.171,14.171c0,6.79,4.803,12.471,11.188,13.843 c-0.591,9.887-3.055,24.482-11.868,33.79c-6.009,6.343-14.315,9.356-24.584,9.052c-10.358-0.346-18.73-3.998-24.876-10.86 c-8.175-9.105-11.122-22.256-12.131-32.102c6.188-1.522,10.806-7.077,10.806-13.724c0-7.817-6.355-14.171-14.171-14.171 S54.366,41.41,54.366,49.227c0,6.904,4.97,12.656,11.522,13.903C66.932,73.876,70.16,88.513,79.57,99.02 c7.28,8.127,17.083,12.459,29.142,12.859c0.597,0.018,1.187,0.03,1.778,0.03c11.277,0,20.478-3.682,27.352-10.961 c10.233-10.824,12.942-27.102,13.533-37.896c6.355-1.396,11.134-7.059,11.134-13.825C162.515,41.41,156.161,35.055,148.344,35.055 z M60.333,49.227c0-4.523,3.682-8.204,8.204-8.204c4.523,0,8.204,3.682,8.204,8.204c0,3.485-2.196,6.45-5.269,7.638 c-0.167-4.427,0.036-7.315,0.042-7.411c0.125-1.641-1.104-3.079-2.745-3.198c-1.683-0.167-3.079,1.104-3.204,2.745 c-0.03,0.382-0.233,3.377-0.09,7.823C62.469,55.605,60.333,52.664,60.333,49.227z M151.519,56.787 c-0.036-2.745-0.173-4.559-0.203-4.845c-0.149-1.641-1.617-2.828-3.234-2.703c-1.641,0.143-2.852,1.599-2.709,3.234 c0.006,0.072,0.137,1.754,0.155,4.427c-3.133-1.152-5.388-4.141-5.388-7.673c0-4.523,3.682-8.204,8.204-8.204 s8.204,3.682,8.204,8.204C156.549,52.622,154.472,55.546,151.519,56.787z"></path>
-                                            </g>
+                                            <path class="st0"
+                                                d="M421.073,221.719c-0.578,11.719-9.469,26.188-23.797,40.094v183.25c-0.016,4.719-1.875,8.719-5.016,11.844 c-3.156,3.063-7.25,4.875-12.063,4.906H81.558c-4.781-0.031-8.891-1.844-12.047-4.906c-3.141-3.125-4.984-7.125-5-11.844V152.219 c0.016-4.703,1.859-8.719,5-11.844c3.156-3.063,7.266-4.875,12.047-4.906h158.609c12.828-16.844,27.781-34.094,44.719-49.906 c0.078-0.094,0.141-0.188,0.219-0.281H81.558c-18.75-0.016-35.984,7.531-48.25,19.594c-12.328,12.063-20.016,28.938-20,47.344 v292.844c-0.016,18.406,7.672,35.313,20,47.344C45.573,504.469,62.808,512,81.558,512h298.641c18.781,0,36.016-7.531,48.281-19.594 c12.297-12.031,20-28.938,19.984-47.344V203.469c0,0-0.125-0.156-0.328-0.313C440.37,209.813,431.323,216.156,421.073,221.719z">
+                                            </path>
+                                            <path class="st0"
+                                                d="M498.058,0c0,0-15.688,23.438-118.156,58.109C275.417,93.469,211.104,237.313,211.104,237.313 c-15.484,29.469-76.688,151.906-76.688,151.906c-16.859,31.625,14.031,50.313,32.156,17.656 c34.734-62.688,57.156-119.969,109.969-121.594c77.047-2.375,129.734-69.656,113.156-66.531c-21.813,9.5-69.906,0.719-41.578-3.656 c68-5.453,109.906-56.563,96.25-60.031c-24.109,9.281-46.594,0.469-51-2.188C513.386,138.281,498.058,0,498.058,0z">
+                                            </path>
                                         </g>
                                     </g>
                                 </svg>
-                                آنلاین شاپ شما
-                            </div>
-                            <div class="d-flex align-items-center gap-2 header-menu">
-                                <div class="dropdown position-relative d-inline-block" id="categoryMenu">
-                                    <a href="#" class="menu-title mx-2 d-flex align-items-center">
-                                        <!-- category svg -->
-                                        <svg
-                                            class="me-2"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            stroke="#000000"
-                                        >
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    opacity="0.34"
-                                                    d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
-                                                    stroke="#2C3F5D"
-                                                    stroke-width="1.536"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path
-                                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
-                                                    stroke="#2C3F5D"
-                                                    stroke-width="1.536"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path
-                                                    opacity="0.34"
-                                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
-                                                    stroke="#2C3F5D"
-                                                    stroke-width="1.536"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path
-                                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
-                                                    stroke="#2C3F5D"
-                                                    stroke-width="1.536"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                            </g>
-                                        </svg>
-                                        دسته بندی ها
-                                        <!-- dropdown arrow -->
-                                        <svg
-                                            class="ms-1"
-                                            width="10"
-                                            height="10"
-                                            viewBox="0 0 10 10"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M8.29995 3.75L5.58329 6.46667C5.26245 6.7875 4.73745 6.7875 4.41662 6.46667L1.69995 3.75"
-                                                stroke="#3E3E3E"
-                                                stroke-opacity="0.87"
-                                                stroke-width="1.5"
-                                                stroke-miterlimit="10"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></path>
-                                        </svg>
-                                    </a>
-                                    <div class="dropdown-menu category-dropdown">
-                                        <div class="category-wrapper">
-                                            <div class="category-list">
-                                                <a href="#" class="category-link active" data-target="daily">کفش روزانه</a>
-                                                <a href="#" class="category-link" data-target="sport">کفش اسپرت</a>
-                                                <a href="#" class="category-link" data-target="college">کفش کالج</a>
-                                                <a href="#" class="category-link" data-target="official">کفش رسمی</a>
-                                            </div>
-                                            <div class="subcategory-container">
-                                                <div class="subcategory-menu show" id="daily">
-                                                    <a href="#">کفش تخت</a>
-                                                    <a href="#">کفش پیاده روی</a>
-                                                    <a href="#">کفش طبی</a>
-                                                </div>
-                                                <div class="subcategory-menu" id="sport">
-                                                    <a href="#">کتانی ورزشی</a>
-                                                    <a href="#">کتانی روزمره</a>
-                                                    <a href="#">کفش رانینگ</a>
-                                                    <a href="#">کفش اسپرت لایت</a>
-                                                </div>
-                                                <div class="subcategory-menu" id="college">
-                                                    <a href="#">کالج ساده</a>
-                                                    <a href="#">کالج جیر</a>
-                                                    <a href="#">کالج طبی</a>
-                                                </div>
-                                                <div class="subcategory-menu" id="official">
-                                                    <a href="#">کفش مجلسی</a>
-                                                    <a href="#">کفش کلاسیک</a>
-                                                    <a href="#">کفش چرمی</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="vertical-line"></div> -->
-                                <a href="" class="menu-title mx-2" id="discountMenuButton">
-                                    <!-- discount svg -->
-                                    <svg
-                                        class="me-2"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path
-                                                d="M19.5 12.5C19.5 11.12 20.62 10 22 10V9C22 5 21 4 17 4H7C3 4 2 5 2 9V9.5C3.38 9.5 4.5 10.62 4.5 12C4.5 13.38 3.38 14.5 2 14.5V15C2 19 3 20 7 20H17C21 20 22 19 22 15C20.62 15 19.5 13.88 19.5 12.5Z"
-                                                stroke="#2C3F5D"
-                                                stroke-width="1.056"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></path>
-                                            <path
-                                                d="M9 14.75L15 8.75"
-                                                stroke="#2C3F5D"
-                                                stroke-width="1.056"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></path>
-                                            <path
-                                                d="M14.9945 14.75H15.0035"
-                                                stroke="#2C3F5D"
-                                                stroke-width="1.056"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></path>
-                                            <path
-                                                d="M8.99451 9.25H9.00349"
-                                                stroke="#2C3F5D"
-                                                stroke-width="1.056"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            ></path>
-                                        </g>
-                                    </svg>
-                                    تخفیفات
-                                </a>
-                                <a href="" class="menu-title mx-2" id="blogMenuButton">
-                                    <!-- blog svg -->
-                                    <svg
-                                        class="me-2"
-                                        width="22"
-                                        height="22"
-                                        version="1.1"
-                                        id="_x32_"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 512.00 512.00"
-                                        xml:space="preserve"
-                                        fill="currentColor"
-                                        stroke-width="0.00512"
-                                    >
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g>
-                                                <path class="st0" d="M421.073,221.719c-0.578,11.719-9.469,26.188-23.797,40.094v183.25c-0.016,4.719-1.875,8.719-5.016,11.844 c-3.156,3.063-7.25,4.875-12.063,4.906H81.558c-4.781-0.031-8.891-1.844-12.047-4.906c-3.141-3.125-4.984-7.125-5-11.844V152.219 c0.016-4.703,1.859-8.719,5-11.844c3.156-3.063,7.266-4.875,12.047-4.906h158.609c12.828-16.844,27.781-34.094,44.719-49.906 c0.078-0.094,0.141-0.188,0.219-0.281H81.558c-18.75-0.016-35.984,7.531-48.25,19.594c-12.328,12.063-20.016,28.938-20,47.344 v292.844c-0.016,18.406,7.672,35.313,20,47.344C45.573,504.469,62.808,512,81.558,512h298.641c18.781,0,36.016-7.531,48.281-19.594 c12.297-12.031,20-28.938,19.984-47.344V203.469c0,0-0.125-0.156-0.328-0.313C440.37,209.813,431.323,216.156,421.073,221.719z"></path>
-                                                <path class="st0" d="M498.058,0c0,0-15.688,23.438-118.156,58.109C275.417,93.469,211.104,237.313,211.104,237.313 c-15.484,29.469-76.688,151.906-76.688,151.906c-16.859,31.625,14.031,50.313,32.156,17.656 c34.734-62.688,57.156-119.969,109.969-121.594c77.047-2.375,129.734-69.656,113.156-66.531c-21.813,9.5-69.906,0.719-41.578-3.656 c68-5.453,109.906-56.563,96.25-60.031c-24.109,9.281-46.594,0.469-51-2.188C513.386,138.281,498.058,0,498.058,0z"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    وبلاگ
-                                </a>
-                            </div>
+                                وبلاگ
+                            </a>
                         </div>
-                        <div class="col-4 d-flex justify-content-end gap-4">
-                          
-                            <div class="basket position-relative text-center rounded-pill px-3 py-2 bg-gray">
-                                <div class="cart-box d-flex align-items-center gap-3">
-                                    <span class="cart-badge" id="cart-count">0</span>
-                                    <span class="icon">
-                                        <!-- basket svg -->
-                                        <svg
-                                            width="30"
-                                            height="30"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
-                                                    stroke="#ffffff"
-                                                    stroke-width="0.8640000000000001"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path
-                                                    d="M8.81 2L5.19 5.63"
-                                                    stroke="#ffffff"
-                                                    stroke-width="0.8640000000000001"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path
-                                                    d="M15.19 2L18.81 5.63"
-                                                    stroke="#ffffff"
-                                                    stroke-width="0.8640000000000001"
-                                                    stroke-miterlimit="10"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                ></path>
-                                                <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="#ffffff" stroke-width="0.8640000000000001"></path>
-                                                <path
-                                                    d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
-                                                    stroke="#ffffff"
-                                                    stroke-width="0.8640000000000001"
-                                                    stroke-linecap="round"
-                                                ></path>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <!-- پنل پیام خالی بودن سبد -->
-                                <div class="basket-empty-tooltip" id="basket-empty-tooltip">
-                                    <div class="tooltip-arrow"></div>
-                                    <div class="tooltip-content">
-                                        <div class="empty-cart-row d-flex align-items-center gap-3">
-                                            <div class="empty-icon-wrapper flex-shrink-0">
-                                                <svg
-                                                    width="42"
-                                                    height="42"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="empty-basket-icon"
-                                                >
-                                                    <path
-                                                        d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
-                                                        stroke="currentColor"
-                                                        stroke-width="0.864"
-                                                        stroke-miterlimit="10"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M8.81 2L5.19 5.63"
-                                                        stroke="currentColor"
-                                                        stroke-width="0.864"
-                                                        stroke-miterlimit="10"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path
-                                                        d="M15.19 2L18.81 5.63"
-                                                        stroke="currentColor"
-                                                        stroke-width="0.864"
-                                                        stroke-miterlimit="10"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    ></path>
-                                                    <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="currentColor" stroke-width="0.864"></path>
-                                                    <path
-                                                        d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
-                                                        stroke="currentColor"
-                                                        stroke-width="0.864"
-                                                        stroke-linecap="round"
-                                                    ></path>
-                                                </svg>
-                                            </div>
-                                            <div class="text-part">
-                                                <p class="message fw-semibold text-dark mb-1">سبد خرید خالی است</p>
-                                                <p class="sub-message text-muted small mb-0">هیچ موردی وجود ندارد</p>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn start-shopping-btn d-block mx-auto rounded-pill px-4 py-2 mt-3">شروع خرید</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="login d-flex justify-content-between align-items-center gap-3 fw-bold">
-                                ورود | ثبت نام
+                    </div>
+                    <div class="col-4 d-flex justify-content-end gap-4">
+
+                        <div class="basket position-relative text-center rounded-pill px-3 py-2 bg-gray">
+                            <div class="cart-box d-flex align-items-center gap-3">
+                                <span class="cart-badge" id="cart-count">0</span>
                                 <span class="icon">
-                                    <!-- person svg -->
-                                    <svg
-                                        width="24"
-                                        height="25"
-                                        viewBox="0 0 24 25"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 12.0633C14.7614 12.0633 17 9.82472 17 7.06329C17 4.30187 14.7614 2.06329 12 2.06329C9.23858 2.06329 7 4.30187 7 7.06329C7 9.82472 9.23858 12.0633 12 12.0633Z"
-                                            stroke="white"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        ></path>
-                                        <path
-                                            d="M20.5899 22.0633C20.5899 18.1933 16.7399 15.0633 11.9999 15.0633C7.25991 15.0633 3.40991 18.1933 3.40991 22.0633"
-                                            stroke="white"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        ></path>
+                                    <!-- basket svg -->
+                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
+                                                stroke="#ffffff" stroke-width="0.8640000000000001"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                            <path d="M8.81 2L5.19 5.63" stroke="#ffffff"
+                                                stroke-width="0.8640000000000001" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M15.19 2L18.81 5.63" stroke="#ffffff"
+                                                stroke-width="0.8640000000000001" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z"
+                                                stroke="#ffffff" stroke-width="0.8640000000000001"></path>
+                                            <path
+                                                d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                                                stroke="#ffffff" stroke-width="0.8640000000000001"
+                                                stroke-linecap="round"></path>
+                                        </g>
                                     </svg>
                                 </span>
                             </div>
+                            <!-- پنل پیام خالی بودن سبد -->
+                            <div class="basket-empty-tooltip" id="basket-empty-tooltip">
+                                <div class="tooltip-arrow"></div>
+                                <div class="tooltip-content">
+                                    <div class="empty-cart-row d-flex align-items-center gap-3">
+                                        <div class="empty-icon-wrapper flex-shrink-0">
+                                            <svg width="42" height="42" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="empty-basket-icon">
+                                                <path
+                                                    d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
+                                                    stroke="currentColor" stroke-width="0.864" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M8.81 2L5.19 5.63" stroke="currentColor" stroke-width="0.864"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M15.19 2L18.81 5.63" stroke="currentColor" stroke-width="0.864"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z"
+                                                    stroke="currentColor" stroke-width="0.864"></path>
+                                                <path
+                                                    d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                                                    stroke="currentColor" stroke-width="0.864" stroke-linecap="round">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-part">
+                                            <p class="message fw-semibold text-dark mb-1">سبد خرید خالی است</p>
+                                            <p class="sub-message text-muted small mb-0">هیچ موردی وجود ندارد</p>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn start-shopping-btn d-block mx-auto rounded-pill px-4 py-2 mt-3">شروع
+                                        خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login d-flex justify-content-between align-items-center gap-3 fw-bold">
+                            ورود | ثبت نام
+                            <span class="icon">
+                                <!-- person svg -->
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 12.0633C14.7614 12.0633 17 9.82472 17 7.06329C17 4.30187 14.7614 2.06329 12 2.06329C9.23858 2.06329 7 4.30187 7 7.06329C7 9.82472 9.23858 12.0633 12 12.0633Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M20.5899 22.0633C20.5899 18.1933 16.7399 15.0633 11.9999 15.0633C7.25991 15.0633 3.40991 18.1933 3.40991 22.0633"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="banner">
-               
-                <img class="shoes-banner" src="assets/images/shoes-banner.png">
             </div>
         </div>
-        <div class="container">
-            <div class="swiper catSwiper swiper-rtl" id="category-thumbnail">
-                <div class="swiper-wrapper" id="swiper-wrapper-category" aria-live="polite"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            <!-- Bestsellers Of The Week Section -->
-            <section class="product-section my-5">
-                <div class="divider">
-                    <span class="fw-bold">پرفروش‌ترین‌های هفته</span>
-                </div>
-                <div class="product-wrapper" id="best-sellers-wrapper">
-                    <!-- محصولات با JS اضافه می‌شوند --></div>
-                <button id="best-sellers-show-more" class="btn rounded-pill show-more-btn mt-4">
-                    مشاهده‌ همه
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12"
-                        viewBox="0 0 15 12"
-                        fill="none"
-                        class="ms-2"
-                    >
-                        <path d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z" fill="currentColor"></path>
-                    </svg>
-                </button>
-            </section>
-            <!-- Amazing Offer Section -->
-            <section class="product-section my-5">
-                <div class="offer-box d-flex justify-content-between align-items-center" data-date="4-12-1409" data-time="09:00">
-                    <div class="offer-title d-flex align-items-center">
-                        <svg
-                            class="offer-icon"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" fill="var(--primary-cream)"/>
-                        </svg>
-                        <span>پیشنهاد شگفت‌انگیز</span>
-                    </div>
-                    <div class="offer-timer">
-                        <div class="timer-box">
-                            <span class="timer-number" id="minutes">۰۰</span>
-                            <span class="timer-label">دقیقه</span>
-                        </div>
-                        <div class="timer-separator">:</div>
-                        <div class="timer-box">
-                            <span class="timer-number" id="hours">۰۰</span>
-                            <span class="timer-label">ساعت</span>
-                        </div>
-                        <div class="timer-separator">:</div>
-                        <div class="timer-box">
-                            <span class="timer-number" id="days">۰۰</span>
-                            <span class="timer-label">روز</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-wrapper" id="amazing-offers-wrapper">
-                    <!-- add profuct with js and json --></div>
-                <button id="amazing-show-more" class="btn rounded-pill show-more-btn mt-4">
-                    مشاهده‌ همه
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12"
-                        viewBox="0 0 15 12"
-                        fill="none"
-                        class="ms-2"
-                    >
-                        <path d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z" fill="currentColor"></path>
-                    </svg>
-                </button>
-            </section>
-            <!-- About Us Section -->
-            <section class="aboutUs-section row align-items-stretch g-4 g-lg-5">
-                <div class="col-lg-4">
-                    <div class="aboutUs-image">
-                        <img src="/assets/images/new-shoes-1-removebg.png" alt="" class="overlay-photo">
-                    </div>
-                </div>
-                <div class="col-lg-5 title-about d-flex flex-column justify-content-center">
-                    <div class="aboutUs-title-wrapper">
-                        <div class="aboutUs-title fw-bold">درباره ما</div>
-                    </div>
-                    <div class="aboutUs-desc">
-                        شاپ کفش بیتا، فروشگاه آنلاین تخصصی کفش‌های زنانه، مردانه و بچگانه است. ما با تمرکز بر کیفیت بالا، طراحی‌های مدرن و راحتی بی‌نظیر، مجموعه‌ای متنوع از کفش‌های اسپرت، رسمی، روزمره و طبی را ارائه می‌دهیم. هدف ما، همراهی شما در انتخابی ایده‌آل برای هر سلیقه و موقعیتی است، با ارسال سریع و خدمات مشتری حرفه‌ای. بیتا، قدم‌هایی مطمئن برای شما.
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="aboutUs-scores d-flex flex-column justify-content-center gap-4">
-                        <div class="aboutUs-score history">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M22 14V12C22 8.22876 22 6.34315 20.8284 5.17157C19.6569 4 17.7712 4 14 4H10C6.22876 4 4.34315 4 3.17157 5.17157C2 6.34315 2 8.22876 2 12V14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22H14"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    ></path>
-                                    <path
-                                        opacity="0.5"
-                                        d="M7 4V2.5"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    ></path>
-                                    <path
-                                        opacity="0.5"
-                                        d="M17 4V2.5"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    ></path>
-                                    <path
-                                        opacity="0.5"
-                                        d="M2 9H22"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    ></path>
-                                    <circle
-                                        cx="18"
-                                        cy="18"
-                                        r="3"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                    ></circle>
-                                    <path
-                                        d="M20.5 20.5L22 22"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <span class="line mx-2">|</span>
-                            <p>+10 سال سابقه</p>
-                        </div>
-                        <div class="aboutUs-score Customers">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M9.36264 3.53846C7.60261 3.53846 6.17582 4.96525 6.17582 6.72528C6.17582 8.4853 7.60261 9.91209 9.36264 9.91209C11.1227 9.91209 12.5494 8.4853 12.5494 6.72528C12.5494 4.96525 11.1227 3.53846 9.36264 3.53846ZM4.63736 6.72528C4.63736 4.11558 6.75294 2 9.36264 2C11.9723 2 14.0879 4.11558 14.0879 6.72528C14.0879 9.33497 11.9723 11.4506 9.36264 11.4506C6.75294 11.4506 4.63736 9.33497 4.63736 6.72528Z"
-                                        fill="currentColor"
-                                    ></path>
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M7.41153 15.4066C5.27249 15.4066 3.53846 17.1406 3.53846 19.2797C3.53846 19.3861 3.55682 19.4596 3.57526 19.5013C3.59011 19.5348 3.60106 19.5412 3.60591 19.544C4.13353 19.8541 5.65133 20.4615 9.36264 20.4615C13.0739 20.4615 14.5913 19.8543 15.1189 19.5443C15.1238 19.5414 15.1352 19.5348 15.15 19.5013C15.1685 19.4596 15.1868 19.3861 15.1868 19.2797C15.1868 17.1406 13.4528 15.4066 11.3137 15.4066H7.41153ZM2 19.2797C2 16.291 4.42282 13.8681 7.41153 13.8681H11.3137C14.3024 13.8681 16.7253 16.291 16.7253 19.2797C16.7253 19.7944 16.5513 20.4869 15.8984 20.8706C15.0381 21.3763 13.2089 22 9.36264 22C5.51639 22 3.68722 21.3763 2.82683 20.8706C2.17398 20.4869 2 19.7944 2 19.2797Z"
-                                        fill="currentColor"
-                                    ></path>
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M15.5431 3.88721C15.654 3.47709 16.0763 3.23448 16.4864 3.34532C18.1832 3.80392 19.3626 5.47949 19.3626 7.38461C19.3626 9.39763 17.9829 11.2126 16.0478 11.4451C15.626 11.4957 15.243 11.1949 15.1923 10.7731C15.1416 10.3513 15.4425 9.96824 15.8643 9.91758C16.8962 9.79362 17.8242 8.75741 17.8242 7.38461C17.8242 6.08213 17.0256 5.0847 16.085 4.8305C15.6749 4.71966 15.4323 4.29733 15.5431 3.88721Z"
-                                        fill="currentColor"
-                                    ></path>
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M17.8384 14.4901C17.9197 14.0731 18.3237 13.801 18.7407 13.8824C20.6337 14.2516 22 15.91 22 17.8388V18.3735C22 18.8469 21.858 19.5212 21.2404 19.9159C20.8246 20.1817 20.1798 20.4649 19.1855 20.666C18.7691 20.7503 18.3633 20.481 18.279 20.0646C18.1948 19.6482 18.464 19.2424 18.8804 19.1581C19.7287 18.9865 20.1871 18.7633 20.4118 18.6197L20.4136 18.6179C20.4153 18.6158 20.4213 18.6077 20.4287 18.5896C20.4451 18.5498 20.4615 18.4784 20.4615 18.3735V17.8388C20.4615 16.6462 19.6167 15.6207 18.4462 15.3924C18.0292 15.311 17.7571 14.9071 17.8384 14.4901Z"
-                                        fill="currentColor"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <span class="line mx-2">|</span>
-                            <p>+1300 مشتری</p>
-                        </div>
-                        <div class="aboutUs-score Support">
-                            <svg
-                                viewBox="0 0 24 24"
-                                id="_24x24_On_Light_Support"
-                                data-name="24x24/On Light/Support"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="#000000"
-                            >
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <rect
-                                        id="view-box"
-                                        width="24"
-                                        height="24"
-                                        fill="none"
-                                    ></rect>
-                                    <path
-                                        id="Shape"
-                                        d="M8,17.751a2.749,2.749,0,0,1,5.127-1.382C15.217,15.447,16,14,16,11.25v-3c0-3.992-2.251-6.75-5.75-6.75S4.5,4.259,4.5,8.25v3.5a.751.751,0,0,1-.75.75h-1A2.753,2.753,0,0,1,0,9.751v-1A2.754,2.754,0,0,1,2.75,6h.478c.757-3.571,3.348-6,7.022-6s6.264,2.429,7.021,6h.478a2.754,2.754,0,0,1,2.75,2.75v1a2.753,2.753,0,0,1-2.75,2.75H17.44A5.85,5.85,0,0,1,13.5,17.84,2.75,2.75,0,0,1,8,17.751Zm1.5,0a1.25,1.25,0,1,0,1.25-1.25A1.251,1.251,0,0,0,9.5,17.751Zm8-6.75h.249A1.251,1.251,0,0,0,19,9.751v-1A1.251,1.251,0,0,0,17.75,7.5H17.5Zm-16-2.25v1A1.251,1.251,0,0,0,2.75,11H3V7.5H2.75A1.251,1.251,0,0,0,1.5,8.751Z"
-                                        transform="translate(1.75 2.25)"
-                                        fill="currentColor"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <span class="line mx-2">|</span>
-                            <p>+50 پشتیبان</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="banner">
 
-            <section class="product-banner my-5">
-                <div class="product-banner-box">
-                    <img src="/assets/images/new-shoes-1-removebg.png" class="img-fluid collection-img" alt="" >
-                    <button type="button" class="collection-btn btn rounded-pill mt-4">مشاهده ی کالکشن
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12"
-                        viewBox="0 0 15 12"
-                        fill="none"
-                        class="ms-2"
-                    >
-                        <path d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z" fill="currentColor"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="product-banner-box"></div>
-                <div class="product-banner-box row">
-                    <div class="col">
-                        <p>کفشت با ما</p>
-                        <button type="button" class="collection-btn btn rounded-pill mt-4">مشاهده ی کالکشن
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12"
-                        viewBox="0 0 15 12"
-                        fill="none"
-                        class="ms-2"
-                    >
-                        <path d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z" fill="currentColor"></path>
-                        </svg>
-                    </button>
-                </div>
-                   
-                     
-                     <div class="col">
-                        <img src="/assets/images/new-shoes-1-removebg.png" class="img-fluid collection-img" alt="">
-                     </div>
-                </div>
-            </section>
+            <img class="shoes-banner" src="assets/images/shoes-banner.png">
         </div>
     </div>
+    <div class="container">
+        <div class="swiper catSwiper swiper-rtl" id="category-thumbnail">
+            <div class="swiper-wrapper" id="swiper-wrapper-category" aria-live="polite"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+        <!-- All Product Section -->
+
+        <section class="product-section my-5">
+            <div class="divider">
+                <span class="fw-bold">همه ی محصولات</span>
+            </div>
+            <div class="product-wrapper swiper" id="all-product-wrapper">
+
+                <!-- محصولات با JS اضافه می‌شوند -->
+            </div>
+            <button id="all-product-show-more" class="btn rounded-pill show-more-btn mt-4">
+                مشاهده‌ همه
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                    class="ms-2">
+                    <path
+                        d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z"
+                        fill="currentColor"></path>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Bestsellers Of The Week Section -->
+        <section class="product-section my-5">
+            <div class="divider">
+                <span class="fw-bold">پرفروش‌ترین‌های هفته</span>
+            </div>
+            <div class="product-wrapper" id="best-sellers-wrapper">
+                <!-- محصولات با JS اضافه می‌شوند -->
+            </div>
+            <button id="best-sellers-show-more" class="btn rounded-pill show-more-btn mt-4">
+                مشاهده‌ همه
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                    class="ms-2">
+                    <path
+                        d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z"
+                        fill="currentColor"></path>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Amazing Offer Section -->
+        <section class="product-section my-5">
+            <div class="offer-box d-flex justify-content-between align-items-center" data-date="4-12-1409"
+                data-time="09:00">
+                <div class="offer-title d-flex align-items-center">
+                    <svg class="offer-icon" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                            fill="var(--primary-cream)" />
+                    </svg>
+                    <span>پیشنهاد شگفت‌انگیز</span>
+                </div>
+                <div class="offer-timer">
+                    <div class="timer-box">
+                        <span class="timer-number" id="minutes">۰۰</span>
+                        <span class="timer-label">دقیقه</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box">
+                        <span class="timer-number" id="hours">۰۰</span>
+                        <span class="timer-label">ساعت</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box">
+                        <span class="timer-number" id="days">۰۰</span>
+                        <span class="timer-label">روز</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper" id="amazing-offers-wrapper">
+                <!-- add profuct with js and json -->
+            </div>
+            <button id="amazing-show-more" class="btn rounded-pill show-more-btn mt-4">
+                مشاهده‌ همه
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                    class="ms-2">
+                    <path
+                        d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z"
+                        fill="currentColor"></path>
+                </svg>
+            </button>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="aboutUs-section row align-items-stretch g-4 g-lg-5">
+            <div class="col-lg-4">
+                <div class="aboutUs-image">
+                    <img src="/assets/images/new-shoes-1-removebg.png" alt="" class="overlay-photo">
+                </div>
+            </div>
+            <div class="col-lg-5 title-about d-flex flex-column justify-content-center">
+                <div class="aboutUs-title-wrapper">
+                    <div class="aboutUs-title fw-bold">درباره ما</div>
+                </div>
+                <div class="aboutUs-desc">
+                    شاپ کفش بیتا، فروشگاه آنلاین تخصصی کفش‌های زنانه، مردانه و بچگانه است. ما با تمرکز بر کیفیت بالا،
+                    طراحی‌های مدرن و راحتی بی‌نظیر، مجموعه‌ای متنوع از کفش‌های اسپرت، رسمی، روزمره و طبی را ارائه
+                    می‌دهیم. هدف ما، همراهی شما در انتخابی ایده‌آل برای هر سلیقه و موقعیتی است، با ارسال سریع و خدمات
+                    مشتری حرفه‌ای. بیتا، قدم‌هایی مطمئن برای شما.
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="aboutUs-scores d-flex flex-column justify-content-center gap-4">
+                    <div class="aboutUs-score history">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M22 14V12C22 8.22876 22 6.34315 20.8284 5.17157C19.6569 4 17.7712 4 14 4H10C6.22876 4 4.34315 4 3.17157 5.17157C2 6.34315 2 8.22876 2 12V14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22H14"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path opacity="0.5" d="M7 4V2.5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <path opacity="0.5" d="M17 4V2.5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <path opacity="0.5" d="M2 9H22" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <circle cx="18" cy="18" r="3" stroke="currentColor" stroke-width="1.5"></circle>
+                                <path d="M20.5 20.5L22 22" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                            </g>
+                        </svg>
+                        <span class="line mx-2">|</span>
+                        <p>+10 سال سابقه</p>
+                    </div>
+                    <div class="aboutUs-score Customers">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.36264 3.53846C7.60261 3.53846 6.17582 4.96525 6.17582 6.72528C6.17582 8.4853 7.60261 9.91209 9.36264 9.91209C11.1227 9.91209 12.5494 8.4853 12.5494 6.72528C12.5494 4.96525 11.1227 3.53846 9.36264 3.53846ZM4.63736 6.72528C4.63736 4.11558 6.75294 2 9.36264 2C11.9723 2 14.0879 4.11558 14.0879 6.72528C14.0879 9.33497 11.9723 11.4506 9.36264 11.4506C6.75294 11.4506 4.63736 9.33497 4.63736 6.72528Z"
+                                    fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.41153 15.4066C5.27249 15.4066 3.53846 17.1406 3.53846 19.2797C3.53846 19.3861 3.55682 19.4596 3.57526 19.5013C3.59011 19.5348 3.60106 19.5412 3.60591 19.544C4.13353 19.8541 5.65133 20.4615 9.36264 20.4615C13.0739 20.4615 14.5913 19.8543 15.1189 19.5443C15.1238 19.5414 15.1352 19.5348 15.15 19.5013C15.1685 19.4596 15.1868 19.3861 15.1868 19.2797C15.1868 17.1406 13.4528 15.4066 11.3137 15.4066H7.41153ZM2 19.2797C2 16.291 4.42282 13.8681 7.41153 13.8681H11.3137C14.3024 13.8681 16.7253 16.291 16.7253 19.2797C16.7253 19.7944 16.5513 20.4869 15.8984 20.8706C15.0381 21.3763 13.2089 22 9.36264 22C5.51639 22 3.68722 21.3763 2.82683 20.8706C2.17398 20.4869 2 19.7944 2 19.2797Z"
+                                    fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.5431 3.88721C15.654 3.47709 16.0763 3.23448 16.4864 3.34532C18.1832 3.80392 19.3626 5.47949 19.3626 7.38461C19.3626 9.39763 17.9829 11.2126 16.0478 11.4451C15.626 11.4957 15.243 11.1949 15.1923 10.7731C15.1416 10.3513 15.4425 9.96824 15.8643 9.91758C16.8962 9.79362 17.8242 8.75741 17.8242 7.38461C17.8242 6.08213 17.0256 5.0847 16.085 4.8305C15.6749 4.71966 15.4323 4.29733 15.5431 3.88721Z"
+                                    fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.8384 14.4901C17.9197 14.0731 18.3237 13.801 18.7407 13.8824C20.6337 14.2516 22 15.91 22 17.8388V18.3735C22 18.8469 21.858 19.5212 21.2404 19.9159C20.8246 20.1817 20.1798 20.4649 19.1855 20.666C18.7691 20.7503 18.3633 20.481 18.279 20.0646C18.1948 19.6482 18.464 19.2424 18.8804 19.1581C19.7287 18.9865 20.1871 18.7633 20.4118 18.6197L20.4136 18.6179C20.4153 18.6158 20.4213 18.6077 20.4287 18.5896C20.4451 18.5498 20.4615 18.4784 20.4615 18.3735V17.8388C20.4615 16.6462 19.6167 15.6207 18.4462 15.3924C18.0292 15.311 17.7571 14.9071 17.8384 14.4901Z"
+                                    fill="currentColor"></path>
+                            </g>
+                        </svg>
+                        <span class="line mx-2">|</span>
+                        <p>+1300 مشتری</p>
+                    </div>
+                    <div class="aboutUs-score Support">
+                        <svg viewBox="0 0 24 24" id="_24x24_On_Light_Support" data-name="24x24/On Light/Support"
+                            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect id="view-box" width="24" height="24" fill="none"></rect>
+                                <path id="Shape"
+                                    d="M8,17.751a2.749,2.749,0,0,1,5.127-1.382C15.217,15.447,16,14,16,11.25v-3c0-3.992-2.251-6.75-5.75-6.75S4.5,4.259,4.5,8.25v3.5a.751.751,0,0,1-.75.75h-1A2.753,2.753,0,0,1,0,9.751v-1A2.754,2.754,0,0,1,2.75,6h.478c.757-3.571,3.348-6,7.022-6s6.264,2.429,7.021,6h.478a2.754,2.754,0,0,1,2.75,2.75v1a2.753,2.753,0,0,1-2.75,2.75H17.44A5.85,5.85,0,0,1,13.5,17.84,2.75,2.75,0,0,1,8,17.751Zm1.5,0a1.25,1.25,0,1,0,1.25-1.25A1.251,1.251,0,0,0,9.5,17.751Zm8-6.75h.249A1.251,1.251,0,0,0,19,9.751v-1A1.251,1.251,0,0,0,17.75,7.5H17.5Zm-16-2.25v1A1.251,1.251,0,0,0,2.75,11H3V7.5H2.75A1.251,1.251,0,0,0,1.5,8.751Z"
+                                    transform="translate(1.75 2.25)" fill="currentColor"></path>
+                            </g>
+                        </svg>
+                        <span class="line mx-2">|</span>
+                        <p>+50 پشتیبان</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- collection banner Section -->
+        <section class="product-banner my-5">
+            <div class="product-banner-box row">
+                <div class="col collection-button">
+                    <p class="collection-name">کفش مردانه</p>
+                    <button type="button" class="collection-btn btn rounded-pill mt-4">مشاهده ی کالکشن
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                            class="ms-2">
+                            <path
+                                d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/new-shoes-1-removebg.png" class="img-fluid collection-img" alt="">
+                </div>
+            </div>
+
+            <div class="product-banner-box collectionTitle">
+                <p class="collection-title">آنلاین شاپ بیتا</p>
+            </div>
+
+            <div class="product-banner-box row">
+                <div class="col collection-button">
+                    <p class="collection-name">کفش زنانه</p>
+                    <button type="button" class="collection-btn btn rounded-pill mt-4">مشاهده ی کالکشن
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                            class="ms-2">
+                            <path
+                                d="M6.41406 0.330196C6.40295 0.319035 6.06247 0.233693 5.65751 0.140615C5.25249 0.047538 4.91674 -0.0143924 4.91134 0.00289409C4.90599 0.0202325 4.86408 0.301333 4.81826 0.627597C4.72621 1.28277 4.50334 2.04774 4.2652 2.52616C3.52289 4.01716 2.19106 5.00441 0.575722 5.26101L0.16438 5.32636L0.16438 5.98502L0.16438 6.64372L0.537205 6.70627C2.9798 7.11606 4.57225 8.94241 4.87015 11.6756C4.88959 11.854 4.91283 12 4.92178 12C5.00416 12 6.36916 11.671 6.39498 11.645C6.41364 11.6261 6.39976 11.4588 6.36407 11.2732C5.96908 9.21822 4.83811 7.54599 3.37047 6.8468L3.01842 6.67907L10.2579 6.66594L14.8357 6.6576L14.8357 5.32459L10.2461 5.31624L3.02372 5.30306L3.46818 5.07786C4.62121 4.4937 5.53409 3.34781 6.07167 1.80972C6.22487 1.37154 6.45602 0.372556 6.41406 0.330196Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <img src="/assets/images/new-shoes-1-removebg.png" class="img-fluid collection-img" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- User Comments Section -->
+        <section class="userComments-section">
+            <div class="divider">
+                <span class="fw-bold">نظرات کاربران</span>
+            </div>
+            <div class="userComments swiper">
+                <div class="swiper-wrapper">
+                    <div class="cardItem cardShape swiper-slide">
+                        <div class="card">
+                            <div class="shape row">
+                                <div class="person-profile col-lg-4 d-flex flex-column gap-3">
+                                    <img src="./assets/images/person-profile/arash-radan.jfif"
+                                        class="person-image img-fluid" alt="">
+                                    <p class="person-name">آرش رادان</p>
+                                </div>
+                                <div class="person-desc col-lg-8">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardItem cardShape swiper-slide">
+                        <div class="card">
+                            <div class="shape row">
+                                <div class="person-profile col-lg-4 d-flex flex-column gap-3">
+                                    <img src="./assets/images/person-profile/mina-asadi.jfif"
+                                        class="person-image img-fluid" alt="">
+                                    <p class="person-name">مینا اسدی</p>
+                                </div>
+                                <div class="person-desc col-lg-8">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardItem cardShape swiper-slide">
+                        <div class="card">
+                            <div class="shape row">
+                                <div class="person-profile col-lg-4 d-flex flex-column gap-3">
+                                    <img src="./assets/images/person-profile/hamed-saeedi.jfif"
+                                        class="person-image img-fluid" alt="">
+                                    <p class="person-name">حامد سعیدی</p>
+                                </div>
+                                <div class="person-desc col-lg-8">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardItem cardShape swiper-slide">
+                        <div class="card">
+                            <div class="shape row">
+                                <div class="person-profile col-lg-4 d-flex flex-column gap-3">
+                                    <img src="./assets/images/person-profile/sina-helmi.jfif"
+                                        class="person-image img-fluid" alt="">
+                                    <p class="person-name">سینا حلمی</p>
+                                </div>
+                                <div class="person-desc col-lg-8">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardItem cardShape swiper-slide">
+                        <div class="card">
+                            <div class="shape row">
+                                <div class="person-profile col-lg-4 d-flex flex-column gap-3">
+                                    <img src="./assets/images/person-profile/arash-radan.jfif"
+                                        class="person-image img-fluid" alt="">
+                                    <p class="person-name">آرش رادان</p>
+                                </div>
+                                <div class="person-desc col-lg-8">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Weblog Section -->
+        <!-- <section class="weblog-section">
+
+        </section> -->
+    </div>
 </body>
+
 </html>
