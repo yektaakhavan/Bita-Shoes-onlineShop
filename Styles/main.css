@@ -27,7 +27,7 @@ body {
 :root {
     --primary-color: #002147;
     --primary-cream: #d2b48c;
-    --secondary-color:#7d5018;
+    --secondary-color: #7d5018;
     --shadow-md: 0px 0px 13px 0px #d2b48c;
     --bg-gray: #F3F3F3;
     --shadow-box: 0 0 15px rgba(0, 0, 0, 0.15);
@@ -41,6 +41,9 @@ body {
 }
 
 
+.primary-text-100 {
+    color: var(--primary-color100);
+}
 
 .primary-text-color {
     color: var(--primary-color);

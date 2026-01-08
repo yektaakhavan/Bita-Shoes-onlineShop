@@ -5,7 +5,6 @@
     "alt": "کفش پیاده روی مردانه",
     "old-price": "3.200.000 تومان",
     "categories": [
-      "all",
       "Best Sellers of the Week"
     ]
   },
@@ -16,7 +15,6 @@
     "old-price": "2.500.000 تومان",
     "discountPercent": 52,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   },
@@ -27,7 +25,6 @@
     "old-price": "1.600.000 تومان",
     "discountPercent": 8,
     "categories": [
-      "all",
       "Amazing Offer",
       "Best Sellers of the Week"
     ]
@@ -36,28 +33,19 @@
     "title": "کفش پیاده روی مردانه",
     "img": "./assets/images/new-shoes.jpg",
     "alt": "کفش پیاده روی مردانه",
-    "old-price": "3.200.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "3.200.000 تومان"
   },
   {
     "title": "کفش اسپرت زنانه",
     "img": "assets/images/Walking-Shoes.jpg",
     "alt": "کفش اسپرت زنانه",
-    "old-price": "2.900.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "2.900.000 تومان"
   },
   {
     "title": "کفش رسمی مردانه",
     "img": "./assets/images/shoes (37).jfif",
     "alt": "کفش رسمی مردانه",
-    "old-price": "4.100.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "4.100.000 تومان"
   },
   {
     "title": "کفش راحتی زنانه",
@@ -66,7 +54,6 @@
     "old-price": "2.500.000 تومان",
     "discountPercent": 19,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   },
@@ -74,19 +61,13 @@
     "title": "کفش ورزشی بچه‌گانه",
     "img": "./assets/images/Everyday-Shoes.jfif",
     "alt": "کفش ورزشی بچه‌گانه",
-    "old-price": "1.500.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "1.500.000 تومان"
   },
   {
     "title": "کفش اسپرت مردانه",
     "img": "./assets/images/Flat-Shoes.jfif",
     "alt": "کفش اسپرت مردانه",
-    "old-price": "3.300.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "3.300.000 تومان"
   },
   {
     "title": "کفش کلاسیک زنانه",
@@ -95,7 +76,6 @@
     "old-price": "3.800.000 تومان",
     "discountPercent": 26,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   },
@@ -103,19 +83,13 @@
     "title": "کفش مجلسی مردانه",
     "img": "./assets/images/J_Crew_ New Balance® 574 Women's Sneakers For….jfif",
     "alt": "کفش مجلسی مردانه",
-    "old-price": "4.500.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "4.500.000 تومان"
   },
   {
     "title": "کفش راحتی مردانه",
     "img": "./assets/images/Leather-Shoes.jfif",
     "alt": "کفش راحتی مردانه",
-    "old-price": "2.700.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "2.700.000 تومان"
   },
   {
     "title": "کفش اسپرت بچه‌گانه",
@@ -124,7 +98,6 @@
     "old-price": "1.600.000 تومان",
     "discountPercent": 5,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   },
@@ -132,19 +105,13 @@
     "title": "کفش ورزشی مردانه",
     "img": "./assets/images/new-shoes (1).jfif",
     "alt": "کفش ورزشی مردانه",
-    "old-price": "3.200.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "3.200.000 تومان"
   },
   {
     "title": "کفش پیاده روی زنانه",
     "img": "./assets/images/new-shoes (3).jfif",
     "alt": "کفش پیاده روی زنانه",
-    "old-price": "2.900.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "2.900.000 تومان"
   },
   {
     "title": "کفش کلاسیک مردانه",
@@ -152,7 +119,6 @@
     "alt": "کفش کلاسیک مردانه",
     "old-price": "3.900.000 تومان",
     "categories": [
-      "all",
       "Best Sellers of the Week"
     ]
   },
@@ -160,19 +126,13 @@
     "title": "کفش راحتی زنانه",
     "img": "./assets/images/shoes (24).jfif",
     "alt": "کفش راحتی زنانه",
-    "old-price": "2.600.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "2.600.000 تومان"
   },
   {
     "title": "کفش اسپرت مردانه",
     "img": "./assets/images/Medical-Colleges.jfif",
     "alt": "کفش اسپرت مردانه",
-    "old-price": "3.400.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "3.400.000 تومان"
   },
   {
     "title": "کفش رسمی زنانه",
@@ -181,7 +141,6 @@
     "old-price": "3.700.000 تومان",
     "discountPercent": 20,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   },
@@ -189,28 +148,19 @@
     "title": "کفش کتانی اسپرت",
     "img": "./assets/images/new-shoes.jpg",
     "alt": "کفش کتانی اسپرت",
-    "old-price": "3.800.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "3.800.000 تومان"
   },
   {
     "title": "کفش مجلسی مردانه",
     "img": "./assets/images/shoes (34).jfif",
     "alt": "کفش مجلسی مردانه",
-    "old-price": "4.200.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "4.200.000 تومان"
   },
   {
     "title": "کفش راحتی بچه‌گانه",
     "img": "./assets/images/new-shoes.jpg",
     "alt": "کفش راحتی بچه‌گانه",
-    "old-price": "1.700.000 تومان",
-    "categories": [
-      "all"
-    ]
+    "old-price": "1.700.000 تومان"
   },
   {
     "title": "کفش اسپرت زنانه",
@@ -219,7 +169,6 @@
     "old-price": "2.900.000 تومان",
     "discountPercent": 35,
     "categories": [
-      "all",
       "Amazing Offer"
     ]
   }
