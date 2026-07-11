@@ -38,6 +38,11 @@ body {
     --primary-color100: #9ba8bd;
     --color-secondary100: #ea2340;
     --color-offerBox: #a16920;
+
+    --color-neutral-000: #fff;
+    --color-neutral-400: #a1a3a8;
+    --color-secondary-500: #19bfd3;
+    --color-neutral-100: #f0f0f1;
 }
 
 
@@ -80,4 +85,353 @@ a {
 p {
     margin: 0;
     padding: 0;
+}
+
+
+
+/********* header *********/
+
+
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.top-menu a,
+.top-menu i {
+    color: #515151;
+}
+
+.top-menu-search .input-group {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top-menu-search .search-txt {
+    padding: 8px;
+    font-size: 13px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #eee;
+    border-radius: 50px;
+    padding-left: 60px;
+}
+
+.top-menu-search .search-btn {
+    background: var(--primary-cream);
+    box-shadow: var(--shadow-md);
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-cream);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-shop-header {
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu a {
+    text-decoration: none;
+}
+
+.menu-title:hover svg path {
+    stroke: var(--primary-cream);
+}
+
+.menu-title {
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.menu-title:hover {
+    color: var(--primary-cream);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* left: 0; */
+    border: none;
+    /* background-color: #fff; */
+    min-width: 300px;
+    z-index: 1000;
+    border-radius: 16px;
+    box-shadow: 0px 0px 28px -9px rgba(123, 123, 123, 0.23);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.category-dropdown {
+    padding: 10px;
+    min-width: 360px;
+}
+
+.category-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.category-item {
+    position: relative;
+}
+
+.category-list {
+    min-width: 160px;
+    border-left: 1px solid #ccc;
+}
+
+.category-link {
+    display: block;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.category-link:hover,
+.category-link.active {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.subcategory-container {
+    flex: 1;
+}
+
+.subcategory-menu {
+    display: none;
+    flex-direction: column;
+}
+
+.subcategory-menu.show {
+    display: flex;
+}
+
+.subcategory-menu a {
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.subcategory-menu a:hover {
+    background-color: #eeeeee;
+}
+
+.basket {
+    position: relative;
+}
+
+.basket:hover .basket-empty-tooltip {
+    display: block;
+    animation: fadeInUp 0.35s ease-out forwards;
+}
+
+.basket-empty-tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    z-index: 1000;
+    width: 240px;
+}
+
+.basket-empty-tooltip::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    filter: drop-shadow(0 -2px 4px rgba(0, 0, 0, 0.08));
+}
+
+.tooltip-content {
+    background: linear-gradient(135deg, #ffffff 0%, #fdfdfb 100%);
+    border-radius: 18px;
+    padding: 16px 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #f0e6d9;
+}
+
+.empty-icon-wrapper {
+    width: 42px;
+    height: 42px;
+}
+
+.empty-basket-icon {
+    color: #d4b87c;
+    opacity: 0.4;
+    filter: drop-shadow(0 2px 6px rgba(212, 184, 124, 0.25));
+    transition: all 0.3s ease;
+}
+
+.basket:hover .empty-basket-icon {
+    opacity: 0.55;
+    transform: scale(1.08);
+}
+
+.empty-cart-row {
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.text-part {
+    direction: rtl;
+}
+
+.message {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+}
+
+.sub-message {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.start-shopping-btn {
+    background: linear-gradient(135deg, var(--primary-cream) 0%, #e6c98a 100%);
+    color: #8b5e1e;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(212, 184, 124, 0.35);
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.start-shopping-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(212, 184, 124, 0.45);
+    background: linear-gradient(135deg, #e6c98a 0%, var(--primary-cream) 100%);
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+
+/************* Footer *************/
+
+.footer-section-title,
+.footer-sections ul li,
+.footer-sections span,
+.footer-social svg {
+    cursor: pointer;
+}
+
+.footer .footer-shape {
+    --r: 35px;
+    --s: 80px;
+    --a: 60deg;
+    /* background-color: var(--primary-cream); */
+    background: linear-gradient(var(--primary-cream) 100%),
+        url("/assets/images/billie-holiday.png") repeat;
+    background-blend-mode: multiply;
+    border-radius: var(--r);
+    --_m: 100% / calc(2 * var(--r)) var(--r) no-repeat radial-gradient(50% 100% at top, #000 calc(100% - 1px), #0000);
+    --_d: (var(--s) + var(--r)) * cos(var(--a));
+    mask: calc(50% + var(--_d)) var(--_m), calc(50% - var(--_d)) var(--_m),
+        radial-gradient(var(--s) at 50% calc(100% + sin(var(--a)) * var(--s)),
+            #0000 100%,
+            #000 calc(100% + 1px)) 0 calc(var(--r) * (sin(var(--a)) - 1)) no-repeat,
+        linear-gradient(90deg,
+            #000 calc(50% - var(--_d)),
+            #0000 0 calc(50% + var(--_d)),
+            #000 0);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 32px 50px;
+    color: var(--primary-color);
+}
+
+
+.footer-section-title {
+    margin-bottom: 25px;
+}
+
+
+.footer-sections ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sections ul li {
+    margin: 10px 0;
+}
+
+
+.footer-social,
+.symbols-img img {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    opacity: 0.6;
+}
+
+.symbols-img img {
+    width: 90px;
+    height: 90px;
+
+}
+
+.shop-etebar {
+    background-color: var(--secondary-color);
+    padding: 20px 15px;
+}
+
+.shop-name {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--primary-cream);
+    /* opacity: 0.6; */
 }

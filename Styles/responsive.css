@@ -1,0 +1,33 @@
+@media screen and (max-width:992px) {
+    .product-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 28px; */
+    }
+}
+
+
+/************** Product Category **************/
+
+
+
+/* @media screen and (min-width:768px) {
+    #woman-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media screen and (min-width:1024px) {
+    #woman-collection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    #woman-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

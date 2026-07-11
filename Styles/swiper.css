@@ -1,0 +1,97 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catSwiper .swiper-slide {
+    flex-direction: column;
+    gap: 24px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.catSwiper .swiper-slide .category-thumbnail {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.catSwiper .swiper-slide .category-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.catSwiper .swiper-slide .category-thumbnail::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 50%;
+    padding: 10px;
+    background: linear-gradient(135deg,
+            var(--primary-cream) 30%,
+            var(--primary-color) 40%,
+            var(--primary-cream) 80%);
+    -webkit-mask: radial-gradient(farthest-side,
+            transparent calc(100% - 5px),
+            #000 0);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 5px), #000 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.catSwiper .swiper-slide .category-thumbnail:hover::before {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.catSwiper .swiper-slide .category-details titile {
+    color: var(--primary-color);
+}
+
+.catSwiper {
+    position: relative;
+}
+
+.catSwiper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    margin: 0 50px;
+    background-color: var(--primary-color);
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .catSwiper .swiper-slide .category-thumbnail:before {
+        bottom: -5px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-size: 20px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: var(--primary-color);
+}
