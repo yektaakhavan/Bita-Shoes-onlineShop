@@ -373,7 +373,7 @@ p {
     --a: 60deg;
     /* background-color: var(--primary-cream); */
     background: linear-gradient(var(--primary-cream) 100%),
-        url("/assets/images/billie-holiday.png") repeat;
+        url("./assets/images/billie-holiday.png") repeat;
     background-blend-mode: multiply;
     border-radius: var(--r);
     --_m: 100% / calc(2 * var(--r)) var(--r) no-repeat radial-gradient(50% 100% at top, #000 calc(100% - 1px), #0000);
