@@ -296,7 +296,7 @@ function renderProducts(productList, wrapperId, cardFunction) {
 }
 
 // بارگذاری داده‌های محصولات
-fetch("/json/products.json")
+fetch("./json/products.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();
@@ -429,7 +429,7 @@ fetch("/json/products.json")
   .catch((err) => console.error("خطا:", err));
 
 // بارگذاری داده‌های نظرات کاربران
-fetch("/json/userComments.json")
+fetch("./json/userComments.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();
@@ -439,7 +439,7 @@ fetch("/json/userComments.json")
   })
   .catch((err) => console.error("خطا:", err));
 
-fetch("/json/weblogArticle.json")
+fetch("./json/weblogArticle.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();

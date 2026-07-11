@@ -122,7 +122,7 @@ function renderProducts(productList, wrapperId, cardFunction) {
 }
 
 // بارگزاری داده برای پرفروش ترین های هفته در ساید بار و کالکشن زنانه اصلی
-fetch("/json/products.json")
+fetch("../../json/products.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();
