@@ -18,7 +18,7 @@ const creatWidgetBestSalesProduct = (product) => {
   ulProduct.innerHTML = `
         
         <li>
-            <a class="d-flex flex-row gap-3 align-items-center px-3" href="#">
+            <a class="d-flex flex-row gap-3 align-items-center px-3" href="/pages/product-details/productDetails.html?id=${product.id}">
                 <div class="sidebar-image">
                     <img loading="lazy" class="rounded-pill img-fluid" src="${
                       product.img
@@ -78,7 +78,7 @@ const creatWomanCollectionProduct = (womanProduct) => {
                           womanProduct.img
                         }" alt="${womanProduct.alt || womanProduct.title}">
                         <div class="card-body">
-                            <a href="#" class="title">${womanProduct.title}</a>
+                            <a href="/pages/product-details/productDetails.html?id=${womanProduct.id}" class="title">${womanProduct.title}</a>
                             <div class="product-bottom">
                                
                                 <div class="product-price">
@@ -90,7 +90,7 @@ const creatWomanCollectionProduct = (womanProduct) => {
                                     </div>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#">
+                                    <a href="#" data-add-to-cart="${womanProduct.id}">
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path d="M0.792969 9.00002H16.793M8.79297 17V1.00002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -122,7 +122,7 @@ function renderProducts(productList, wrapperId, cardFunction) {
 }
 
 // بارگزاری داده برای پرفروش ترین های هفته در ساید بار و کالکشن زنانه اصلی
-fetch("../../json/products.json")
+fetch("/json/products.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();

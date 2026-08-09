@@ -31,7 +31,7 @@ const allProductCard = (product) => {
                           product.img
                         }" alt="${product.alt || product.title}">
                         <div class="card-body">
-                            <a href="#" class="title">${product.title}</a>
+                            <a href="/pages/product-details/productDetails.html?id=${product.id}" class="title">${product.title}</a>
                             <div class="product-bottom">
                                 <div class="product-attributes">
                                     <ul class="size-options">
@@ -49,7 +49,7 @@ const allProductCard = (product) => {
                                     </div>
                                 </div>
                                 <div class="new-add-to-cart">
-                                    <a href="#">
+                                    <a href="#" data-add-to-cart="${product.id}">
                                         <span class="d-flex gap-2 align-items-center">
                                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25" stroke="currentColor" stroke-width="2.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -104,7 +104,7 @@ const createProductCard = (product) => {
                           product.img
                         }" alt="${product.alt || product.title}">
                         <div class="card-body">
-                            <a href="#" class="title">${product.title}</a>
+                            <a href="/pages/product-details/productDetails.html?id=${product.id}" class="title">${product.title}</a>
                             <div class="product-bottom">
                                 <div class="product-price">
                                     <div class="price">
@@ -115,7 +115,7 @@ const createProductCard = (product) => {
                                     </div>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#">
+                                    <a href="#" data-add-to-cart="${product.id}">
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path d="M0.792969 9.00002H16.793M8.79297 17V1.00002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -165,7 +165,7 @@ const createAlternativeProductCard = (product) => {
                           product.img
                         }" alt="${product.alt || product.title}">
                         <div class="card-body">
-                            <a href="#" class="title">${product.title}</a>
+                            <a href="/pages/product-details/productDetails.html?id=${product.id}" class="title">${product.title}</a>
                             <div class="product-bottom">
                                 <div class="product-price">
                                     <div class="price">
@@ -176,7 +176,7 @@ const createAlternativeProductCard = (product) => {
                                     </div>
                                 </div>
                                 <div class="add-to-cart">
-                                    <a href="#">
+                                    <a href="#" data-add-to-cart="${product.id}">
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                 <path d="M0.792969 9.00002H16.793M8.79297 17V1.00002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -296,35 +296,37 @@ function renderProducts(productList, wrapperId, cardFunction) {
 }
 
 // بارگذاری داده‌های محصولات
-fetch("./json/products.json")
+fetch("/json/products.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();
   })
   .then((products) => {
-    // دسته‌بندی thumbnails
+    // دسته‌بندی thumbnails (فقط در صفحه اصلی وجود دارد)
     const catWrapper =
       document.getElementById("category-swiper-wrapper") ||
       document.querySelector("#swiper-wrapper-category");
-    products.forEach((product) => {
-      const slide = document.createElement("div");
-      slide.className = "swiper-slide";
-      slide.innerHTML = `
+    if (catWrapper) {
+      products.forEach((product) => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.innerHTML = `
                     <div class="category-thumbnail">
                         <a class="title" href="#">
                             <img decoding="async" src="${product.img}" alt="${
-        product.alt || product.title
-      }">
+          product.alt || product.title
+        }">
                         </a>
                     </div>
                     <div class="category-details">
                         <a class="title" href="#" title="${product.title}">${
-        product.title
-      }</a>
+          product.title
+        }</a>
                     </div>
                 `;
-      catWrapper.appendChild(slide);
-    });
+        catWrapper.appendChild(slide);
+      });
+    }
 
     // رندر سه بخش
     renderProducts(products, "#all-product-wrapper", allProductCard);
@@ -341,8 +343,15 @@ fetch("./json/products.json")
       createAlternativeProductCard
     );
 
-    // Swiperها
-    new Swiper(".catSwiper", {
+    // Swiperها (فقط اگر المان مربوطه در صفحه موجود باشد ساخته می‌شوند)
+    window.appSwipers = window.appSwipers || {};
+    const initSwiper = (selector, options) => {
+      if (document.querySelector(selector)) {
+        window.appSwipers[selector] = new Swiper(selector, options);
+      }
+    };
+
+    initSwiper(".catSwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -358,7 +367,7 @@ fetch("./json/products.json")
       },
     });
 
-    new Swiper(".productSwiperAll", {
+    initSwiper(".productSwiperAll", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -373,7 +382,7 @@ fetch("./json/products.json")
       },
     });
 
-    new Swiper(".productSwiperBest", {
+    initSwiper(".productSwiperBest", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -388,7 +397,7 @@ fetch("./json/products.json")
       },
     });
 
-    new Swiper(".productSwiperAmazing", {
+    initSwiper(".productSwiperAmazing", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -403,7 +412,7 @@ fetch("./json/products.json")
       },
     });
 
-    new Swiper(".userComments", {
+    initSwiper(".userComments", {
       slidesPerView: 4,
       spaceBetween: 20,
       loop: false,
@@ -414,7 +423,7 @@ fetch("./json/products.json")
         1024: { slidesPerView: 4 },
       },
     });
-    new Swiper(".weblogArticle", {
+    initSwiper(".weblogArticle", {
       slidesPerView: 3,
       spaceBetween: 10,
       loop: false,
@@ -429,7 +438,7 @@ fetch("./json/products.json")
   .catch((err) => console.error("خطا:", err));
 
 // بارگذاری داده‌های نظرات کاربران
-fetch("./json/userComments.json")
+fetch("/json/userComments.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();
@@ -439,7 +448,7 @@ fetch("./json/userComments.json")
   })
   .catch((err) => console.error("خطا:", err));
 
-fetch("./json/weblogArticle.json")
+fetch("/json/weblogArticle.json")
   .then((response) => {
     if (!response.ok) throw new Error("خطا در بارگذاری فایل JSON");
     return response.json();

@@ -7,22 +7,18 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/package/bootstrap/css/bootstrap.rtl.min.css" crossorigin="anonymous">
     <script defer src="/package/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script defer src="/package/swiper/js/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="/package/swiper/css/swiper-bundle.min.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Links -->
     <link rel="stylesheet" href="/Styles/header.css">
     <link rel="stylesheet" href="/Styles/main.css">
     <link rel="stylesheet" href="/Styles/responsive.css">
-    <link rel="stylesheet" href="/Styles/swiper.css">
-    <link rel="stylesheet" href="productDetails.css">
+    <link rel="stylesheet" href="cart.css">
     <script defer src="/JavaScript/header.js"></script>
     <script defer src="/JavaScript/main.js"></script>
 <script defer src="/JavaScript/cart.js"></script>
-    <script defer src="productDetails.js"></script>
-    <title>مشاهده جزئیات محصول | Bita Theme</title>
+    <script defer src="cart.js"></script>
+    <title>سبد خرید | Bita Theme</title>
 </head>
 
 <body>
@@ -62,7 +58,7 @@
                                 stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </button>
-                    <a href="/pages/cart/cart.html" class="mobile-icon-btn position-relative" aria-label="سبد خرید">
+                    <a href="#" class="mobile-icon-btn position-relative" aria-label="سبد خرید">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -449,144 +445,87 @@
 
 
     <!-- محتوای اصلی صفحه جزئیات محصول -->
-    <main class="pd-page">
-        <div class="container">
+    <!-- محتوای اصلی صفحه سبد خرید -->
+    <main class="container cart-page py-3">
 
-            <nav aria-label="breadcrumb" class="pd-breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="/index.html">خانه</a></li>
-                    <li class="breadcrumb-item"><a href="/pages/product-category/productCategory.html">دسته‌بندی محصولات</a></li>
-                    <li class="breadcrumb-item active" aria-current="page" id="pd-breadcrumb-current">جزئیات محصول</li>
-                </ol>
-            </nav>
+        <!-- مسیر صفحه -->
+        <nav aria-label="breadcrumb" class="pd-breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/index.html">خانه</a></li>
+                <li class="breadcrumb-item active" aria-current="page">سبد خرید</li>
+            </ol>
+        </nav>
 
-            <div id="pd-loading" class="pd-state-box text-center">
-                <p>در حال بارگذاری اطلاعات محصول...</p>
+        <h1 class="cart-title fw-bold my-3">سبد خرید</h1>
+
+        <!-- وضعیت بارگذاری -->
+        <div id="cart-loading" class="text-center py-5">
+            <div class="spinner-border primary-text-color" role="status">
+                <span class="visually-hidden">در حال بارگذاری...</span>
+            </div>
+        </div>
+
+        <!-- سبد خرید خالی -->
+        <div id="cart-empty" class="cart-empty-state text-center py-5 d-none">
+            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
+                    stroke="currentColor" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M8.81 2L5.19 5.63" stroke="currentColor" stroke-width="1" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15.19 2L18.81 5.63" stroke="currentColor" stroke-width="1" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z"
+                    stroke="currentColor" stroke-width="1"></path>
+                <path d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
+            </svg>
+            <p class="fs-5 text-gray mt-3">سبد خرید شما خالی است</p>
+            <a href="/pages/product-category/productCategory.html"
+                class="btn start-shopping-btn rounded-pill px-4 py-2 mt-2 d-inline-block">شروع خرید</a>
+        </div>
+
+        <!-- سبد خرید پر از کالا -->
+        <div id="cart-filled" class="row g-4 py-3 d-none">
+            <div class="col-lg-8">
+                <ul class="cart-items-list list-unstyled" id="cart-items-list"></ul>
             </div>
 
-            <div id="pd-not-found" class="pd-state-box text-center d-none">
-                <p>محصول مورد نظر پیدا نشد.</p>
-                <a href="/index.html" class="btn start-shopping-btn rounded-pill px-4 py-2">بازگشت به فروشگاه</a>
+            <div class="col-lg-4">
+                <div class="cart-summary">
+                    <h2 class="cart-summary-title">خلاصه سفارش</h2>
+                    <div class="cart-summary-row d-flex justify-content-between">
+                        <span>تعداد کالا</span>
+                        <span id="cart-summary-count"></span>
+                    </div>
+                    <div class="cart-summary-row d-flex justify-content-between">
+                        <span>جمع کل</span>
+                        <span id="cart-summary-total"></span>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn start-shopping-btn rounded-pill w-100 py-2" id="cart-checkout-btn">
+                        تسویه حساب
+                    </button>
+                    <a href="/pages/product-category/productCategory.html" class="cart-continue-link d-block text-center mt-3">
+                        ادامه‌ی خرید
+                    </a>
+                </div>
             </div>
+        </div>
 
-            <section id="pd-content" class="pd-content d-none">
-                <div class="row gy-4">
-
-                    <!-- گالری تصویر محصول -->
-                    <div class="col-lg-6">
-                        <div class="pd-gallery">
-                            <span class="pd-discount-badge d-none" id="pd-discount-badge"></span>
-                            <button type="button" class="pd-like-btn" id="pd-like-btn" aria-pressed="false" aria-label="افزودن به علاقه‌مندی‌ها">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.463 6.02421 11.4664 6.02765 11.4698 6.03106L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM13.4698 8.03034C13.7627 8.32318 14.2376 8.32309 14.5304 8.03014C14.8233 7.7372 14.8232 7.26232 14.5302 6.96948L13.4698 8.03034ZM9.42605 18.3219C7.91039 17.1271 6.25307 15.9603 4.93829 14.4798C3.64922 13.0282 2.75 11.3345 2.75 9.1371H1.25C1.25 11.8026 2.3605 13.8361 3.81672 15.4758C5.24723 17.0866 7.07077 18.3752 8.49742 19.4999L9.42605 18.3219ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219ZM11.4698 6.03106L13.4698 8.03034L14.5302 6.96948L12.5302 4.97021L11.4698 6.03106Z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <img id="pd-main-image" src="" alt="" class="pd-main-image" loading="lazy">
-                        </div>
-                    </div>
-
-                    <!-- اطلاعات محصول -->
-                    <div class="col-lg-6">
-                        <div class="pd-info">
-                            <span class="pd-category-tag" id="pd-category-tag"></span>
-                            <h1 class="pd-title" id="pd-title"></h1>
-
-                            <div class="pd-rating">
-                                <span class="pd-stars" aria-hidden="true">★★★★★</span>
-                                <span class="pd-rating-count">(۲۴ نظر)</span>
-                            </div>
-
-                            <div class="pd-price-block">
-                                <span class="new-price" id="pd-new-price"></span>
-                                <span class="old-price" id="pd-old-price"></span>
-                            </div>
-
-                            <ul class="pd-highlights">
-                                <li>ارسال سریع به سراسر کشور</li>
-                                <li>ضمانت اصالت و سلامت فیزیکی کالا</li>
-                                <li>۷ روز ضمانت بازگشت وجه</li>
-                            </ul>
-
-                            <hr class="pd-divider">
-
-                            <div class="pd-option-group">
-                                <span class="pd-option-label">سایز:</span>
-                                <ul class="pd-size-list" id="pd-size-list">
-                                    <li class="pd-size-item" data-size="40" tabindex="0">۴۰</li>
-                                    <li class="pd-size-item" data-size="41" tabindex="0">۴۱</li>
-                                    <li class="pd-size-item" data-size="42" tabindex="0">۴۲</li>
-                                </ul>
-                            </div>
-
-                            <div class="pd-option-group">
-                                <span class="pd-option-label">تعداد:</span>
-                                <div class="pd-quantity">
-                                    <button type="button" class="pd-qty-btn" id="pd-qty-minus" aria-label="کاهش تعداد">－</button>
-                                    <span id="pd-qty-value">۱</span>
-                                    <button type="button" class="pd-qty-btn" id="pd-qty-plus" aria-label="افزایش تعداد">＋</button>
-                                </div>
-                            </div>
-
-                            <div class="pd-actions">
-                                <button type="button" class="btn pd-add-to-cart-btn" id="pd-add-to-cart">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25" stroke="currentColor" stroke-width="2.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M8.81 2L5.19 5.63" stroke="currentColor" stroke-width="2.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M15.19 2L18.81 5.63" stroke="currentColor" stroke-width="2.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="currentColor" stroke-width="2.3"></path>
-                                        <path d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"></path>
-                                    </svg>
-                                    <span>افزودن به سبد خرید</span>
-                                </button>
-                                <span class="pd-add-feedback" id="pd-add-feedback" role="status" aria-live="polite"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- تب‌های توضیحات / مشخصات / نظرات -->
-                <div class="pd-tabs-section">
-                    <ul class="nav nav-tabs pd-nav-tabs" id="pdTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pd-tab-desc-btn" data-bs-toggle="tab" data-bs-target="#pd-tab-desc" type="button" role="tab" aria-selected="true">توضیحات محصول</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pd-tab-specs-btn" data-bs-toggle="tab" data-bs-target="#pd-tab-specs" type="button" role="tab" aria-selected="false">مشخصات فنی</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pd-tab-comments-btn" data-bs-toggle="tab" data-bs-target="#pd-tab-comments" type="button" role="tab" aria-selected="false">نظرات کاربران</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content pd-tab-content" id="pdTabContent">
-                        <div class="tab-pane fade show active" id="pd-tab-desc" role="tabpanel">
-                            <p id="pd-description"></p>
-                        </div>
-                        <div class="tab-pane fade" id="pd-tab-specs" role="tabpanel">
-                            <table class="table pd-specs-table">
-                                <tbody id="pd-specs-body"></tbody>
-                            </table>
-                        </div>
-                        <div class="tab-pane fade" id="pd-tab-comments" role="tabpanel">
-                            <div class="swiper pd-comments-swiper">
-                                <div class="swiper-wrapper" id="pd-comments-wrapper"></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- محصولات مرتبط -->
-                <div class="pd-related-section">
-                    <h2 class="pd-section-title">محصولات مرتبط</h2>
-                    <div class="swiper pd-related-swiper">
-                        <div class="swiper-wrapper" id="pd-related-wrapper"></div>
-                        <div class="pd-related-nav swiper-button-next"></div>
-                        <div class="pd-related-nav swiper-button-prev"></div>
-                    </div>
-                </div>
-            </section>
+        <!-- پیام موفقیت تسویه حساب (دمو) -->
+        <div id="cart-checkout-success" class="text-center py-5 d-none">
+            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1"></circle>
+                <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+            <p class="fs-5 text-gray mt-3">سفارش شما با موفقیت ثبت شد!</p>
+            <a href="/index.html" class="btn start-shopping-btn rounded-pill px-4 py-2 mt-2 d-inline-block">بازگشت به
+                فروشگاه</a>
         </div>
     </main>
+
 
     <!-- footer -->
     <footer class="footer">

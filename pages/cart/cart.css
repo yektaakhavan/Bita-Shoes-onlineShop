@@ -1,0 +1,163 @@
+/* صفحه سبد خرید */
+
+.pd-breadcrumb {
+    margin-top: 12px;
+}
+
+.cart-title {
+    font-size: 26px;
+    color: var(--text-primary);
+}
+
+/* -------- حالت خالی -------- */
+.cart-empty-state svg {
+    color: var(--border);
+}
+
+/* -------- لیست کالاها -------- */
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.cart-item-image {
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--bg-gray);
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.cart-item-title {
+    font-weight: 700;
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cart-item-unit-price {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.cart-qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 4px 12px;
+}
+
+.cart-qty button {
+    border: none;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 1;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.cart-item-subtotal {
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
+    min-width: 110px;
+    text-align: center;
+}
+
+.cart-item-remove {
+    border: none;
+    background: transparent;
+    color: var(--text-gray);
+    cursor: pointer;
+    padding: 6px;
+}
+
+.cart-item-remove:hover {
+    color: #c0392b;
+}
+
+/* -------- خلاصه سفارش -------- */
+.cart-summary {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+.cart-summary-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.cart-summary-row {
+    padding: 8px 0;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+.cart-summary-row span:last-child {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.cart-continue-link {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+/* -------- ریسپانسیو -------- */
+@media screen and (max-width: 767px) {
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    .cart-item-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+}

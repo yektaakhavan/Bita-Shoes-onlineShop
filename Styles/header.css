@@ -389,7 +389,7 @@
   background: linear-gradient(135deg,
       var(--color-offerBox) 0%,
       var(--secondary-color) 100%),
-    url("../assets/images/asfalt-dark.png") repeat;
+    url("/assets/images/asfalt-dark.png") repeat;
   background-blend-mode: multiply;
   color: white;
   padding: 18px 35px;
@@ -469,7 +469,7 @@
   height: 100%;
   min-height: 320px;
   background: linear-gradient(135deg, var(--color-offerBox) 0%, var(--secondary-color) 100%),
-    url("../assets/images/asfalt-dark.png") repeat;
+    url("/assets/images/asfalt-dark.png") repeat;
   background-blend-mode: multiply !important;
   border-radius: 14px;
   box-shadow: var(--shadow-md);
@@ -566,7 +566,7 @@
   background: linear-gradient(135deg,
       var(--primary-cream) 0%,
       var(--color-offerBox) 100%),
-    url("../assets/images/billie-holiday.png") repeat;
+    url("/assets/images/billie-holiday.png") repeat;
   background-blend-mode: multiply;
   display: flex;
   justify-content: space-between;
@@ -579,7 +579,7 @@
   background: linear-gradient(135deg,
       var(--primary-cream) 0%,
       var(--color-offerBox) 100%),
-    url("../assets/images/asfalt-dark.png") repeat;
+    url("/assets/images/asfalt-dark.png") repeat;
   background-blend-mode: multiply;
   display: flex;
   justify-content: space-between;
@@ -813,7 +813,7 @@
   left: 50px;
   width: 50px;
   height: 40px;
-  background-image: url(../assets/images/quote-svgrepo-com.svg);
+  background-image: url(/assets/images/quote-svgrepo-com.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -864,7 +864,7 @@
   height: 18px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  background-image: url(../assets/images/person-male-svgrepo-com.svg);
+  background-image: url(/assets/images/person-male-svgrepo-com.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1005,4 +1005,60 @@
 
 .thumbnailFeatures-section:hover .feature-cardShape:hover::after {
   bottom: -3%;
+}
+
+/************** Basket Dropdown (mini cart) **************/
+
+.basket {
+    cursor: pointer;
+}
+
+.basket-empty-tooltip {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: var(--shadow-box);
+    padding: 18px;
+    z-index: 60;
+    display: none;
+    text-align: center;
+}
+
+.basket-empty-tooltip.show {
+    display: block;
+}
+
+.basket-empty-tooltip .tooltip-arrow {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: #fff;
+}
+
+.basket-empty-tooltip .empty-cart-row {
+    text-align: right;
+}
+
+.basket-empty-tooltip .empty-basket-icon,
+.basket-empty-tooltip .message {
+    color: var(--primary-color);
+}
+
+
+/************** Add-to-cart click feedback **************/
+
+[data-add-to-cart] {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-add-to-cart].added {
+    background-color: var(--primary-cream) !important;
+    color: var(--primary-color) !important;
 }

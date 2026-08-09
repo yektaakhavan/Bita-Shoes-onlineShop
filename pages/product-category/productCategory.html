@@ -5,28 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../package/bootstrap/css/bootstrap.rtl.min.css" crossorigin="anonymous">
-    <script defer src="../../package/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/package/bootstrap/css/bootstrap.rtl.min.css" crossorigin="anonymous">
+    <script defer src="/package/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- Swiper JS -->
-    <script defer src="../../package/swiper/js/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="../../package/swiper/css/swiper-bundle.min.css">
+    <script defer src="/package/swiper/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/package/swiper/css/swiper-bundle.min.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Links -->
-    <link rel="stylesheet" href="./productCategory.css">
-    <!-- <link rel="stylesheet" href="dg.css"> -->
-    <link rel="stylesheet" href="../../Styles/main.css">
-    <link rel="stylesheet" href="../../Styles/responsive.css">
-    <!-- <link rel="stylesheet" href="/Styles/header.css"> -->
-    <script defer src="./productCategory.js"></script>
-    <script defer src="../../JavaScript/main.js"></script>
-    <title>Woman Collection</title>
+    <link rel="stylesheet" href="productCategory.css">
+    <link rel="stylesheet" href="/Styles/header.css">
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/responsive.css">
+    <script defer src="productCategory.js"></script>
+    <script defer src="/JavaScript/main.js"></script>
+<script defer src="/JavaScript/cart.js"></script>
+    <title>کالکشن زنانه | آنلاین شاپ بیتا</title>
 </head>
 
 <body>
+    <!-- ================= هدر موبایل (کمتر از lg) ================= -->
+    <div class="container-fluid d-lg-none mobile-header-wrapper">
+        <div class="container">
+            <div class="mobile-header d-flex justify-content-between align-items-center py-2">
+                <button type="button" class="mobile-icon-btn" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="باز کردن منو">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+
+                <a href="/index.html" class="mobile-logo fw-bold primary-text-color d-flex align-items-center gap-2">
+                    <svg width="26" height="26" viewBox="0 0 217.791 217.791" xmlns="http://www.w3.org/2000/svg">
+                        <path style="fill:var(--primary-cream);"
+                            d="M187.129,0H36.465c-7.864,0-14.667,6.122-15.49,13.951L1.332,201.979 c-0.43,4.081,0.871,8.127,3.556,11.11c2.691,2.989,6.587,4.702,10.693,4.702h186.465c4.052,0,7.936-1.677,10.651-4.6 c2.715-2.924,4.105-6.922,3.801-10.961L202.47,14.237C201.873,6.253,195.136,0,187.129,0z M19.549,199.89l19.01-181.99h146.224 l13.587,181.99H19.549z">
+                        </path>
+                    </svg>
+                    <span>بیتا</span>
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+                    <button type="button" class="mobile-icon-btn" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileSearchOffcanvas" aria-controls="mobileSearchOffcanvas"
+                        aria-label="جستجو">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.7678 9.58335C17.7678 13.9584 14.2261 17.5 9.85111 17.5C5.47611 17.5 1.93445 13.9584 1.93445 9.58335C1.93445 5.20835 5.47611 1.66669 9.85111 1.66669"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M18.6011 18.3334L16.9344 16.6667" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <a href="/pages/cart/cart.html" class="mobile-icon-btn position-relative" aria-label="سبد خرید">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z"
+                                stroke="currentColor" stroke-width="1.8"></path>
+                            <path
+                                d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= پنل کشویی منو (موبایل) ================= -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title fs-5" id="mobileNavLabel">منو</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="بستن"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-nav-list list-unstyled mb-4">
+                <li><a href="/index.html">خانه</a></li>
+                <li><a href="/pages/product-category/productCategory.html">کفش زنانه</a></li>
+                <li><a href="/pages/product-category/productCategory.html">کفش مردانه</a></li>
+                <li><a href="/pages/product-category/productCategory.html">کفش روزمره/اسپرت</a></li>
+                <li><a href="/pages/product-category/productCategory.html">کفش رسمی و مجلسی</a></li>
+            </ul>
+            <hr>
+            <a href="#" class="mobile-login d-flex align-items-center gap-2 fw-bold mb-3">
+                <svg width="20" height="21" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12.0633C14.7614 12.0633 17 9.82472 17 7.06329C17 4.30187 14.7614 2.06329 12 2.06329C9.23858 2.06329 7 4.30187 7 7.06329C7 9.82472 9.23858 12.0633 12 12.0633Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    <path
+                        d="M20.5899 22.0633C20.5899 18.1933 16.7399 15.0633 11.9999 15.0633C7.25991 15.0633 3.40991 18.1933 3.40991 22.0633"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+                ورود | ثبت نام
+            </a>
+            <div class="text-gray small">پشتیبانی ۲۴ ساعته: ۰۲۱-۹۳۷۲۳۰۵۹</div>
+        </div>
+    </div>
+
+    <!-- ================= پنل کشویی جستجو (موبایل) ================= -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="mobileSearchOffcanvas" aria-labelledby="mobileSearchLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title fs-5" id="mobileSearchLabel">جستجو</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="بستن"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="input-group">
+                    <input name="txt" class="search-txt rounded-pill fs-6 w-100" placeholder="جستجو کنید...">
+                    <button class="btn search-btn rounded-circle" title="جستجو" type="submit">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="d-block">
+                            <path
+                                d="M17.7678 9.58335C17.7678 13.9584 14.2261 17.5 9.85111 17.5C5.47611 17.5 1.93445 13.9584 1.93445 9.58335C1.93445 5.20835 5.47611 1.66669 9.85111 1.66669"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18.6011 18.3334L16.9344 16.6667" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <!-- header -->
     <div class="container-fluid">
@@ -319,17 +434,17 @@
             </div>
         </div>
         <div class="banner">
-            <!-- <img class="shoes-banner" src="assets/images/shoes-banner.png"> -->
-            <img class="shoes-banner img-fluid" src="assets/images/shoes-banner-2.png">
+            <img class="shoes-banner img-fluid" src="/assets/images/shoes-banner-2.png" alt="بنر تخفیف فروشگاه کفش" loading="lazy">
         </div>
     </div>
 
 
 <!-- خط اسم کالکشن و مرتب سازی پیش فرض -->
     <div class="container my-5">
-        <main class="row category-line align-content-center">
+        <main class="category-page-main">
+        <div class="row category-line align-content-center">
             <div class="col-12 col-lg-1 category-name">
-                <span class="fw-bold">زنانه</span>
+                <h1 class="category-title fw-bold">کالکشن زنانه</h1>
             </div>
             <div class="col-12 col-lg-9 my-lg-0 mb-4 mt-5">
                 <hr class="category-divider">
@@ -344,7 +459,7 @@
                     <option value="">مرتب سازی براساس گران ترین</option>
                 </select>
             </div>
-        </main>
+        </div>
 
         <!-- سایدبار که شامل جستجو و قیلتر ها و بخش پرفروش ترین های هفته هست -->
         <!-- SideBar -->
@@ -375,7 +490,7 @@
                     </form>
                 </div>
                 <div class="widget-filter widget-block">
-                    <div class="filter-title">فیلتر ها</div>
+                    <h3 class="filter-title">فیلتر ها</h3>
                     <div class="w-full bg-neutral-000 ">
                         <!-- قیمت -->
                         <div class="w-full px-lg-5">
@@ -437,8 +552,8 @@
 
                     </div>
                 </div>
-                <div class="widget-bestSalesProduct widget-block" ">
-                    <div class=" bestSalesProduct-title">پرفروش ترین های هفته</div>
+                <div class="widget-bestSalesProduct widget-block">
+                    <h3 class="bestSalesProduct-title">پرفروش ترین های هفته</h3>
                 <div id="best-sellers-wrapper"></div>
 
             </div>
@@ -454,6 +569,7 @@
 
         </div>
     </div>
+        </main>
 
 
     </div>
@@ -742,8 +858,8 @@
                     <div
                         class="col-lg-3 footer-sections symbols-img d-flex flex-columnumn justify-content-between align-items-center">
 
-                        <img class="img-fluid" src="./assets/images/symbols/enemad.png" alt="">
-                        <img class="img-fluid" src="./assets/images/symbols/zarinpal.png" alt="">
+                        <img class="img-fluid" src="/assets/images/symbols/enemad.png" alt="">
+                        <img class="img-fluid" src="/assets/images/symbols/zarinpal.png" alt="">
                     </div>
                 </div>
 
