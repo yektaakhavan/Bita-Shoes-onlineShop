@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "کفش راحتی زنانه",
-    "img": "/assets/images/sport-men-shoe.jpg",
+    "img": "/assets/images/Sports-light-Shoes.jpg",
     "alt": "کفش راحتی زنانه",
     "old-price": "2.500.000 تومان",
     "discountPercent": 52,
@@ -58,7 +58,7 @@
   {
     "id": 7,
     "title": "کفش راحتی زنانه",
-    "img": "/assets/images/sport-men-shoe.jpg",
+    "img": "/assets/images/Sports-light-Shoes.jpg",
     "alt": "کفش راحتی زنانه",
     "old-price": "2.500.000 تومان",
     "discountPercent": 19,
@@ -126,7 +126,7 @@
   {
     "id": 14,
     "title": "کفش ورزشی مردانه",
-    "img": "/assets/images/sport-men-shoe.jpg",
+    "img": "/assets/images/sport-men-shoe.jfif",
     "alt": "کفش ورزشی مردانه",
     "old-price": "3.200.000 تومان",
     "categories": [
