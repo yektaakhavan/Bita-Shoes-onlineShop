@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "کفش راحتی زنانه",
-    "img": "/assets/images/sports-light-shoes.jpg",
+    "img": "/assets/images/Sports-light-Shoes.jpg",
     "alt": "کفش راحتی زنانه",
     "old-price": "2.500.000 تومان",
     "discountPercent": 52,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "کفش اسپرت زنانه",
-    "img": "/assets/images/medical-colleges.jfif",
+    "img": "/assets/images/Medical-Colleges.jfif",
     "alt": "کفش اسپرت زنانه",
     "old-price": "1.600.000 تومان",
     "discountPercent": 8,
@@ -44,7 +44,7 @@
   {
     "id": 5,
     "title": "کفش اسپرت زنانه",
-    "img": "assets/images/walking-shoes.jpg",
+    "img": "/assets/images/Walking-Shoes.jpg",
     "alt": "کفش اسپرت زنانه",
     "old-price": "2.900.000 تومان"
   },
@@ -58,7 +58,7 @@
   {
     "id": 7,
     "title": "کفش راحتی زنانه",
-    "img": "/assets/images/sports-light-shoes.jpg",
+    "img": "/assets/images/Sports-light-Shoes.jpg",
     "alt": "کفش راحتی زنانه",
     "old-price": "2.500.000 تومان",
     "discountPercent": 19,
@@ -70,14 +70,14 @@
   {
     "id": 8,
     "title": "کفش ورزشی زنانه",
-    "img": "/assets/images/everyday-shoes.jfif",
+    "img": "/assets/images/Everyday-Shoes.jfif",
     "alt": "کفش ورزشی زنانه",
     "old-price": "1.500.000 تومان"
   },
   {
     "id": 9,
     "title": "کفش اسپرت مردانه",
-    "img": "/assets/images/flat-shoes.jfif",
+    "img": "/assets/images/Flat-Shoes.jfif",
     "alt": "کفش اسپرت مردانه",
     "old-price": "3.300.000 تومان"
   },
@@ -105,7 +105,7 @@
   {
     "id": 12,
     "title": "کفش راحتی مردانه",
-    "img": "/assets/images/leather-shoes.jfif",
+    "img": "/assets/images/Leather-Shoes.jfif",
     "alt": "کفش راحتی مردانه",
     "old-price": "2.700.000 تومان",
     "categories": [
@@ -115,7 +115,7 @@
   {
     "id": 13,
     "title": "کفش اسپرت زنانه",
-    "img": "/assets/images/medical-colleges.jfif",
+    "img": "/assets/images/Medical-Colleges.jfif",
     "alt": "کفش اسپرت زنانه",
     "old-price": "1.600.000 تومان",
     "discountPercent": 5,
@@ -146,7 +146,7 @@
   {
     "id": 16,
     "title": "کفش کلاسیک مردانه",
-    "img": "/assets/images/running-shoes.jfif",
+    "img": "/assets/images/Running-Shoes.jfif",
     "alt": "کفش کلاسیک مردانه",
     "old-price": "3.900.000 تومان",
     "categories": [
@@ -166,7 +166,7 @@
   {
     "id": 18,
     "title": "کفش اسپرت مردانه",
-    "img": "/assets/images/medical-colleges.jfif",
+    "img": "/assets/images/Medical-Colleges.jfif",
     "alt": "کفش اسپرت مردانه",
     "old-price": "3.400.000 تومان"
   },
