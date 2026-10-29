@@ -176,7 +176,6 @@ Key design characteristics include:
 
 ![Bita Theme Shopping Cart](./assets/images/preview/Shopping-Cart.png)
 
-> Screenshot filenames should match the actual files inside `docs/screenshots/`.
 
 ---
 
