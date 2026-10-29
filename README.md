@@ -231,10 +231,6 @@ This project was built to practice and demonstrate:
 
 **Yekta Akhavan**
 
-Frontend Developer focused on building responsive and maintainable web applications with React, JavaScript, TypeScript, and modern frontend tools.
-
-* [GitHub](https://github.com/yektaakhavan)
-* [LinkedIn](https://www.linkedin.com/in/yekta-akhavan/)
-* [Portfolio](https://yekta-akhavan.vercel.app/)
-* [Instagram](https://www.instagram.com/yektaakhavan.dev/)
-* [Email](mailto:yekta.akhavan.dev@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-yekta.akhavan.dev@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:yekta.akhavan.dev@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yekta_Akhavan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yekta-akhavan/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-yekta--akhavan.vercel.app-991397?style=flat-square&logo=vercel&logoColor=white)](https://yekta-akhavan.vercel.app/)
